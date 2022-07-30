@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> PHP </title>
+        <link rel="stylesheet" href="allnotecss.css">
+        <style>
+            table, th, td 
+            {
+              border: 2px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <a href="#name"><div class="scrollTop"></div></a>
+        
+        <div class="banner">
+            <h2 id="name"></h2>
+            <h1>PHP(Hypertext Preprocessor)</h1>
+        </div>
+
+<div class="souvik">
+       <b> <h2 align="center">Overview of PHP</h2></b>
+        <p>The PHP Hypertext Preprocessor (PHP) is a programming language that allows web developers to create dynamic content that interacts with databases.<br> PHP is basically used for developing web based software applications. This tutorial helps you to build your base with PHP.</p><br><br>
+     
+        <table>
+            <tr><th><h2>Table of Content</h2>
+                <a href="#a1">What is PHP?</a><br>
+                <a href="#a2">What Can PHP Do?</a><br>
+                <a href="#a3">Basic PHP Syntax</a><br>
+                <a href="#a4">Comments in PHP</a><br>
+                <a href="#a5">Characteristics of PHP</a><br>
+                <a href="#a6">Applications of PHP</a><br>
+                <a href="#a7">PHP Variables</a><br>
+                <a href="#a8">Differences between constants and variables </a><br>
+                <a href="#a9">PHP - Operator Types</a><br>
+                <a href="#a10">PHP - Decision Making</a><br>
+                <a href="#a11">PHP - Loop Types</a><br>
+                <a href="#a12">The break and continue statement</a><br>
+                <a href="#a13">PHP - Arrays</a><br>
+                <a href="#a14">PHP - GET & POST Methods</a><br>
+                <a href="#a15">PHP Fundamentals Cheat Sheet</a><br>
+            </th></tr>
+        </table><br><br><br>
+
+
+        <h2 id="a1">What is PHP?</h2>
+         
+        <ul class="qw" style="list-style-type:circle">
+            <li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+            <li>PHP is a widely-used, open source scripting language</li>
+            <li>PHP scripts are executed on the server</li>
+            <li>PHP is free to download and use</li>
+        </ul>
+
+        <h2 id="a2">What Can PHP Do?</h2>
+          
+        <ul class="qw">
+            <li>PHP can generate dynamic page content</li>
+            <li>PHP can create, open, read, write, delete, and close files on the server</li>
+            <li>PHP can collect form data</li>
+            <li>PHP can send and receive cookies</li>
+            <li>PHP can add, delete, modify data in your database</li>
+            <li>PHP can be used to control user-access</li>
+            <li>PHP can encrypt data</li>
+        </ul>
+        <h2 id="a3">Basic PHP Syntax</h2>
+         
+        <p>A PHP script can be placed anywhere in the document. A PHP script starts with "<"?php and ends with ?>:"<"?php .The default file extension for PHP files is ".php". A PHP file normally contains HTML tags, and some PHP scripting code.</p>
+        <img src="images/1.jpg" width="400" height="300">
+
+
+        <h2 id="a4">Comments in PHP</h2>
+         
+        <p>There are two types of single line comments that are // your comments and  #your comments. <br>
+            Multiline comments is /* comment here */. Nested multiple comments are not allowed.</p>
+
+            <h2>How to Declare Variable</h2>
+            <p>Variable declared with dollar sign($).First character start with a-zA-Z_ and then other <br> character from a-zA-Z_0-9.No space and no special character are allowed. This is a object so you do not assign $this. </p>
+
+            <h2 id="a5">Characteristics of PHP</h2>
+             
+            <p>Five important characteristics make PHP's practical nature possible−</p>
+            <ul class="qw">
+                <li>Simplicity</li>
+                <li>Efficiency</li>
+                <li>Security</li>
+                <li>Flexibility</li>
+                <li>Familiarity</li>
+            </ul>
+
+            <h2 id="a6">Applications of PHP</h2>
+            
+            <ol class="qw" type="1">
+                <li>PHP performs system functions, i.e. from files on a system it can create, open, read, write, and close them.</li>
+                <li>PHP can handle forms, i.e. gather data from files, save data to a file, through email you can send data, return data to the user.</li>
+                <li>You add, delete, modify elements within your database through PHP.</li>
+                <li>Access cookies variables and set cookies.</li>
+                <li>Using PHP, you can restrict users to access some pages of your website.</li>
+                <li>It can encrypt data.</li>
+            </ol>
+
+                <h2>"Hello World" Script in PHP</h2>
+                <img src="images/2.jpg" width="300" height="300">
+                <table class="asd" border="2"  padding="2">
+                    <u><h3 style="color:red;" >Output</h3></u>
+                    <th>Hello,World!</th>
+                </table>
+
+                <h2 id="a7">PHP Variables</h2>
+                
+                <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).<br> Rules for PHP variables:</p>
+                <ul class="qw">
+                    <li>A variable starts with the $ sign, followed by the name of the variable</li>
+                    <li>A variable name must start with a letter or the underscore character</li>
+                    <li> A variable name cannot start with a number</li>
+                    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                    <li> Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+                </ul>
+
+
+                <h2>Variable Scope</h2>
+                <p>Scope can be defined as the range of availability a variable has to the program in which it is declared. PHP variables can be one of four scope types−</p>
+                <ul class="qw">
+                    <li>Local variables</li>
+                    <li>Function parameters</li>
+                    <li>Global variables</li>
+                    <li>Static variables</li>
+                </ul>
+
+                <h2>Variable Naming</h2>
+                <p>Rules for naming a variable is−</p>
+                <ul class="qw">
+                    <li>Variable names must begin with a letter or underscore character.</li>
+                    <li>A variable name can consist of numbers, letters, underscores but you cannot use characters like + , - , % , ( , ) . & , etc</li>
+                </ul>
+
+                <h2 id="a8">Differences between constants and variables are</h2>
+                
+                <ul class="qw">
+                    <li>There is no need to write a dollar sign ($) before a constant, where as in Variable one has to write a dollar sign.</li>
+
+                    <li>Constants cannot be defined by simple assignment, they may only be defined using the define() function.</li>
+                        
+                    <li>Constants may be defined and accessed anywhere without regard to variable scoping rules.</li>
+                        
+                    <li>Once the Constants have been set, may not be redefined or undefined.</li>
+                </ul>
+           
+                <h2>Valid and invalid constant names</h2>
+                <img src="images/3.jpg" width="400" height="300">
+
+                <h2 id="a9">PHP - Operator Types</h2>
+                
+                <p>There are 5 types of Operator</p>
+                <ol  class="qw" type="1">
+                   <b> <li>Arithmetic Operators</li></b>
+                    <p>There are following arithmetic operators supported by PHP language− <br> Assume variable A holds 10 and variable B holds 20 then−</p>
+                    <img src="images/4.jpg" width="600" height="300" ><br><br><br><br>
+
+                    <b><li>Comparison Operators</li></b>
+                    <p>There are following comparison operators supported by PHP language <br> Assume variable A holds 10 and variable B holds 20 then−</p>
+                    <img src="images/5.jpg"    width="600" height="300"><br><br><br><br>
+
+                    <b><li>Logical (or Relational) Operators</li></b>
+                    <p>There are following logical operators supported by PHP language <br> Assume variable A holds 10 and variable B holds 20 then−</p>
+                    <img src="images/6.jpg" width="600" height="300"  ><br><br><br><br>
+
+                    <b><li>Assignment Operators</li></b>
+                    <p>There are following assignment operators supported by PHP language−</p>
+                    <img src="images/7.jpg"  width="600" height="300"><br><br><br><br>
+
+                    <b><li>Conditional (or ternary) Operators</li></b>
+                    <p>There is one more operator called conditional operator. This first evaluates an expression for a true or false value <br> and then execute one of the two given statements depending upon the result of the evaluation. The conditional operator has this syntax−</p>
+                    <img src="images/8.jpg" width="600" height="90"><br><br><br><br>
+                
+                </ol>
+                <h2>Operators Categories</h2>
+                <p>All the operators we have discussed above can be categorized into following categories−</p>
+                <ul class="qw">
+                    <li>Unary prefix operators, which precede a single operand.</li>
+                    <li> Binary operators, which take two operands and perform a variety of arithmetic and logical operations.</li>                       
+                    <li>The conditional operator (a ternary operator), which takes three operands and evaluates either the second or third expression, depending on the evaluation of the first expression.</li>                      
+                    <li> Assignment operators, which assign a value to a variable.</li>
+                </ul>
+
+                <h2 id="a10">PHP - Decision Making</h2>
+                
+                <p>The if, elseif ...else and switch statements are used to take decision based on the different condition. <br> You can use conditional statements in your code to make your decisions. PHP supports following three decision making statements −</p>
+                <img src="images/9.jpg" width="400" height="300">
+                <ul class="qw">
+                    <li>if...else statement− use this statement if you want to execute a set of code when a condition is true and another if the condition is not true</li>
+                    <li>elseif statement− is used with the if...else statement to execute a set of code if one of the several condition is true</li>        
+                    <li>switch statement− is used if you want to select one of many blocks of code to be executed, use the Switch statement. The switch statement is used to avoid long blocks of if..elseif..else code.</li> <br><br><br>
+                </ul>
+
+
+                <i><h3>1. The If...Else Statement</h3></i>
+                <h3>Syntax</h3>
+                <p>if (condition)<br> code to be executed if condition is true;<br>else <br> code to be executed if condition is false;</p>
+                <h3 >Example</h3>
+                <img src="images/10.jpg" width="500" height="300">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Have a nice weekend!</th></tr></table><br>
+
+                <i><h3>2. The ElseIf Statement</h3></i>
+                <p>If you want to execute some code if one of the several conditions are true use the elseif statement</p>
+                <h3>Syntax</h3>
+                <p>if (condition) <br> code to be executed if condition is true; <br>elseif (condition) <br>code to be executed if condition is true; <br>else <br>code to be executed if condition is false;</p>
+
+                <u><h3>Example</h3></u>
+                <img src="images/11.jpg" width="500" height="300" >
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Have a nice weekend!</th></tr></table><br>
+
+                <i><h3>3. The Switch Statement </h3></i>
+                <p>If you want to select one of many blocks of code to be executed, use the Switch statement.<br> The switch statement is used to avoid long blocks of if..elseif..else code.</p>
+
+                <u><h3>Syntax</h3></u>
+                <p>switch (expression){ <br>
+                    case label1: <br>code to be executed if expression = label1;<br>break;<br> case label2:<br>code to be executed if expression = label2;<br> break;<br> default: <br>code to be executed <br>if expression is different <br>from both label1 and label2;<br>}</p>
+
+                <u><h3>Example</h3></u>
+                <p>The switch statement works in an unusual way. First it evaluates given expression then seeks a lable to match the resulting value. If a matching value is found then the code associated with the matching label will be executed or if none of the lable matches then statement will execute any specified default code.</p>
+                <img src="images/12.jpg" width="600" height="900">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Today is Monday</th></tr></table><br><br>
+                
+                <h2 id="a11">PHP - Loop Types</h2>
+                
+                <i><h3>1. The for loop statement</h3></i>
+                <p>The for statement is used when you know how many times you want to execute a statement or a block of statements.</p>
+                <img src="images/13.jpg" width="350" height="300" >
+                <h3>Syntax</h3>
+                <p>for (initialization; condition; increment){ <br>code to be executed;<br> } <br>
+                
+                    The initializer is used to set the start value for the counter of the number of loop iterations. A variable may be declared here for this purpose and it is traditional to name it $i.</p>
+                    <img src="images/14.jpg" width="400" height="300">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>At the end of the loop a = 50 and b = 25</th></tr></table><br><br>
+
+                <i><h3> 2. The while loop statement</h3></i>
+                <p>The while statement will execute a block of code if and as long as a test expression is true. <br>
+
+                    If the test expression is true then the code block will be executed. After the code has executed the test expression will again be evaluated and the loop will continue until the test expression is found to be false.</p>
+
+                   
+
+                    <img src="images/15.jpg" width="300" height="400">
+                   <h3>Syntax</h3>
+                   <p>while (condition) { <br>
+                    code to be executed;<br>
+                    }</p>
+                <h3>Example</h3>
+                <p>This example decrements a variable value on each iteration of the loop and the counter increments until it reaches 10 when the evaluation is false and the loop ends.</p>
+                <img src="images/16.jpg" width="400" height="300">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Loop stopped at i = 10 and num = 40</th></tr></table><br><br>
+
+
+                    <h3>3. The do...while loop statement</h3>
+                    <p>The do...while statement will execute a block of code at least once - it then will repeat the loop as long as a condition is true.</p>
+                    <h3>Syntax</h3>
+                    <p>do {<br>
+                        code to be executed;<br>
+                        } <br>
+                        while (condition);</p>
+                    
+                    <h3>Example</h3>
+                    <p>The following example will increment the value of i at least once, and it will continue incrementing the variable i as long as it has a value of less than 10−</p>
+                    <img src="images/17.jpg" width="400" height="300">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Loop stopped at i = 10</th></tr></table><br><br>
+
+                <i><h3>4. The foreach loop statement</h3></i>
+                <p>The foreach statement is used to loop through arrays. For each pass the value of the current array element is assigned to $value and the array pointer is moved by one and in the next pass next element will be processed.</p>
+                <h3>Syntax</h3>
+                    <p>foreach (array as value) { <br>
+                        code to be executed; <br>
+                        }</p>
+                        <h3>Example</h3>
+                        <img src="images/18.jpg" width="400" height="300">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Value is 1
+                    Value is 2 <br>
+                    Value is 3 <br>
+                    Value is 4 <br>
+                    Value is 5</th></tr></table><br><br>
+
+
+                    <h2 id="a12">The break and continue statement</h2>
+                   
+                   <i><h3>The break statement</h3></i>
+                   <p>The PHP break keyword is used to terminate the execution of a loop prematurely. <br>
+                    The break statement is situated inside the statement block. It gives you full control and whenever you want to exit <br> from the loop you can come out. After coming out of a loop immediate statement to the loop will be executed.</p>
+                    <img src="images/19.jpg" width="400" height="300">
+
+                    <u><h3>Example</h3></u>
+                    <img src="images/20.jpg" width="400" height="300">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Loop stopped at i = 3</th></tr></table><br><br>
+
+                <i><h3>The continue statement</h3></i>
+                <p>The PHP continue keyword is used to halt the current iteration of a loop but it does not terminate the loop. <br>
+                    Just like the break statement the continue statement is situated inside the statement block containing the code that the loop executes, <br> preceded by a conditional test. For the pass encountering continue statement, rest of the loop code is skipped and next pass starts.</p>
+                    <img src="images/21.jpg" width="400" height="300">
+                    
+                    <u><h3>Example</h3></u>
+
+                    <img src="images/22.jpg" width="400" height="300">
+                <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Value is 1 <br>
+                    Value is 2 <br>
+                    Value is 4 <br>
+                    Value is 5 <br>
+                    </th></tr></table><br><br>
+
+                    <h2 id="a13">PHP - Arrays</h2>
+                   
+                    <p>There are three different kind of arrays and each array value is accessed using an ID c which is called array index.</p>
+                    <ul class="qw">
+                        <li><b>Numeric array− </b>An array with a numeric index. Values are stored and accessed in linear fashion.  <br>
+                        <h3>Example</h3> <br>
+                        <img src="images/23.jpg" width="500" height="500">
+                        <u><h3 style="color: red;">Output</h3></u>
+                <table border="2"><tr><th>Value is 1 <br>
+                    Value is 2 <br>
+                    Value is 3 <br>
+                    Value is 4 <br>
+                    Value is 5 <br>
+                    Value is one <br>
+                    Value is two <br>
+                    Value is three <br>
+                    Value is four <br>
+                    Value is five</th></tr></table><br><br>
+                        
+                        </li>
+                        <li><b>Associative array−</b>An array with strings as index. This stores element values in association with key values rather than in a strict linear index order. </li>
+                        <h3>Example</h3> <br>
+                        <img src="images/24.jpg" width="600" height="500">
+                        <u><h3 style="color: red;">Output</h3></u>
+                        <table border="2"><tr><th>Salary of mohammad is 2000 <br>
+                            Salary of qadir is 1000 <br>
+                            Salary of zara is 500 <br>
+                            Salary of mohammad is high <br>
+                            Salary of qadir is medium <br>
+                            Salary of zara is low</th></tr></table><br><br>
+                        
+                        
+                        
+                        <li><b>Multidimensional array− </b>An array containing one or more arrays and values are accessed using multiple indices</li>
+                        <h3>Example</h3> <br>
+                        <img src="images/25.jpg" width="600" height="900">
+                        <u><h3 style="color: red;">Output</h3></u>
+                        <table border="2"><tr><th>Marks for mohammad in physics : 35 <br>
+                            Marks for qadir in maths : 32 <br>
+                            Marks for zara in chemistry : 39</th></tr></table><br><br>
+                    </ul>
+                    <h2 id="a14">PHP - GET & POST Methods</h2>
+                    
+                    <p>There are two ways the browser client can send information to the web server.</p>
+                    <ol  class="qw" type="1">
+                        <b><li>The GET Method</li></b>
+                        <p>The GET method sends the encoded user information appended to the page request. The page and the encoded information are separated by the ? character. <br>
+                            http://www.test.com/index.htm?name1=value1&name2=value2</p>
+                            <ul class="qw" >
+                                <li>The GET method produces a long string that appears in your server logs, in the browser's Location: box.</li>
+                                <li>The GET method is restricted to send upto 1024 characters only. <br>
+
+                                    <li>  Never use GET method if you have password or other sensitive information to be sent to the server. <br></li>
+                                    
+                                    <li>GET can't be used to send binary data, like images or word documents, to the server. <br></li>
+                                    
+                                    <li>The data sent by GET method can be accessed using QUERY_STRING environment variable. <br></li>
+                                    
+                                    <li>The PHP provides $_GET associative array to access all the sent information using GET method.</li><br><br>  
+                                    <img src="images/26.jpg" width="500" height="400">
+                            </ul> <br><br>
+                            <b><li>The POST Method</li></b>
+                            <p>The POST method transfers information via HTTP headers. The information is encoded as described in case of GET method and put into a header called QUERY_STRING.</p>
+                            <ul>
+                                <li>The POST method does not have any restriction on data size to be sent.</li> <br>
+                                   <li> The POST method can be used to send ASCII as well as binary data.</li><br>   
+                                   <li> The data sent by POST method goes through HTTP header so security depends on HTTP protocol. By using Secure HTTP you can make sure that your information is secure.</li> <br>                                    
+                                    <li>The PHP provides $_POST associative array to access all the sent information using POST method.</li><br><br>
+
+                                    <img src="images/27.jpg" width="500" height="400">
+                            </ul>
+                    </ol>
+                    <h2 id="a15">PHP Fundamentals Cheat Sheet</h2>
+                    
+                    <table border="5" >
+                        <tr><td><img src="images/s1.jpg" width="300" height="200"></td><td><img src="images/s2.jpg" width="300" height="250"></td><td><img src="images/s3.jpg" width="300" height="200"></td></tr>
+                        <tr><td><img src="images/s4.jpg" width="300" height="400"></td><td><img src="images/s5.jpg" width="300" height="200"></td><td><img src="images/s6.jpg" width="300" height="350"></td></tr>
+                        <tr><td><img src="images/s7.jpg" width="300" height="300"></td><td><img src="images/s8.jpg" width="300" height="300"></td><td><img src="images/s9.jpg" width="300" height="200"></td></tr>
+                    
+                    
+                    
+                    </table>
+
+                </div>
+
+
+                <script type="text/javascript">
+                    window.addEventListener('scroll',function(){
+                        var scroll = document.querySelector('.scrollTop');
+                        scroll.classList.toggle("active" ,window.scrollY > 500)
+                    })
+                </script>
+                
+    </body>
+
+</html>
+
+
+
+ <!--
+            <i class="fa-duotone fa-book-arrow-up"></i>
+            
+        <a href="#name_of_the_section">Text to link</a>
+        <h2 id="name_of_the_section"></h2>-->

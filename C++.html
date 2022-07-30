@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+ <html>
+   <title>c++</title>
+   <head>
+      <link rel="stylesheet" href="allnotecss.css">
+
+      <style>
+         table, th, td 
+         {
+           border: 2px solid black;
+         }
+         </style>
+   </head>
+ <body>
+   <a href="#name"><div class="scrollTop"></div></a>
+      <h2 id="name"></h2>
+ <div align="center">
+<h1><u>OVERVIEW  OF  C++</u></h1></div>
+<table>
+   <tr><th><h2>Table of Content</h2>
+<a href="#intro">INTRODUCTION</a><br>
+<a href="#features">FEATURES OF OOP/C++</a><br>
+<a href="#data">DATA  TYPES:</a><br>
+<a href="#diff">DIFFERENCE</a><br>
+<a href="#basic">BASIC KNOWLEDGE</a><br>
+<a href="#inline">INLINE FUNCTION</a><br>
+<a href="#function">FUNCTION OVERLOADING</a><br>
+<a href="#op">OPERATOR OVERLOADING</a><br>
+<a href="#static">STATIC DATA MEMBER</a><br>
+<a href="#con">CONSTRUCTOR</a><br>
+<a href="#des">DESTRUCTOR</a><br>
+<a href="#in">INHERITANCE</a><br>
+<a href="#frd">FRIEND FUNCTION</a><br>
+<a href="#file">FILE HANDLING</a><br>
+<a href="#this">this POINTER</a><br>
+<a href="#vir">VIRTUAL FUNCTION</a><br>
+<a href="#exp">EXCEPTION HANDLING</a><br>
+</th></tr>
+</table><br><br><br>
+
+<h2 id="intro"></h2>
+<div align="center">
+<h2><u>INTRODUCTION:</u></h2></div>
+<P>C++ is a general-purpose programming language created by Danish computer scientist Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. 
+Paradigms:
+Multi-paradigm: procedural, imperative, functional, object-oriented, generic, modular</P>
+<h2 id="features"></h2>
+<div align="center">
+<h2><u>FEATURES OF OOP/C++:</u></h2></div>
+<p>C++ is an Object-Oriented Programming Language, unlike C which is a procedural programming language. This is the most important feature of C++. It can create/destroy objects while programming. Also, It can create blueprints with which objects can be created. We have discussed the Object-Orient Programming Concepts in C++ in this article.
+</p>
+<p><b><u>Features of Object-oriented programming Language:</u></b></p>
+</p>
+<ul style="list-style-type:circle;">
+<li>Class</li>
+<li>Objects</li>
+<li>Encapsulation</li>
+<li>Polymorphism</li>
+<li>Inheritance</li>
+<li>Abstraction</li>
+<li>Dynamic Binding</li>
+</ul>
+<dl>
+<dt><b><p style="color: darkblue;"><u>1.Class:</u></p></b></dt>
+<dd>A class is a collection of objects.In C++ is the building block that leads to Object-Oriented programming. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A C++ class is like a blueprint for an object.</dd>
+<dt><b><p style="color:darkblue ;"><u>2.Objects:</u></p></b></dt>
+<dd>Object are the basic runtime entities in an onject oriented programming.An object is an instance of a class.</dd>
+<dt><b><p style="color: darkblue;"><u>3.Encapsulation:</u></p></b></dt>
+<dd>Encapsulation is an oop concept that binds together the data and functions that manipulate the data,and that keeps both safe from the outside interfrence and misuse</dd>
+<dt><b><p style="color: darkblue;"><u>4.Polymorphism:</u></p></b></dt>
+<dd>Polymorphism means the ability to take more than one form.Operator overloading and Function overloading are examples of polymorphism.</dd>
+<dt><b><p style="color: darkblue;"><u>5.Inheritance:</u></p></b></dt>
+<dd>Inheritance is the process by which objects of one class acquire the prperties of objects of another class.</dd>
+<dt><b><p style="color: darkblue;"><u>6.Abstraction:</u></p></b></dt>
+<dd>Abstraction is the concept of object oriented programming that shows only essential attributes and hides unneccesary information.</dd>
+<dt><b><p style="color: darkblue;"><u>7.Dynamic Binding:</u></p></b></dt>
+<dd>Dynamic Binding means that the code associated with a given procedure call is not known untill the time of the call at runtime.</dd>
+</dl>
+<h2 id="data"></h2>
+<div align="center">
+<h2><u>DATA  TYPES:</u></h2></div>
+<p><b><u>C++ supports the following data types:</u></b></p>
+<ol>
+<li>Primary or Built in or Fundamental data type</li>
+<li>Derived data types</li>
+<li>User defined data types</li>
+</ol>
+<dl>
+<dt><b><p style="color:darkblue"><u>1. Primitive Data Types:</u></p></b></dt>
+<dd> These data types are built-in or predefined data types and can be used directly by the user to declare variables. example: int, char, float, bool, etc. Primitive data types available in C++ are: </dd>
+<dd><ol type="a">
+<li>Integer</li>
+<li>Character</li>
+<li>Boolean</li>
+<li>Floating Point</li>
+<li>Double Floating Point</li>
+<li>Valueless or Void</li>
+<li>Wide Character</li></ol></dd>
+<dt><b><p style="color:darkblue"><u>2. Derived Data Types:</u></p></b></dt>
+<dd> The data types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types. These can be of four types namely: </dd>
+<dd><ol type="a">
+<li>Function</li>
+<li>Array</li>
+<li>Pointer</li>
+<li>Reference</li>
+</ol></dd>
+<dt><b><p style="color:darkblue"><u>3. Abstract or User-Defined Data Types: </u></p></b></dt>
+<dd>These data types are defined by the user itself. Like, as defining a class in C++ or a structure. C++ provides the following user-defined datatypes: </dd>
+<dd><ol type="a">
+<li>Class</li>
+<li>Structure</li>
+<li>Union</li>
+<li>Enumeration</li>
+<li>Typedef defined Datatype</li></ol></dd>
+</dl>
+<h2 id="diff"></h2>
+<div align="center">
+<h2><u>DIFFERENCE</u> </H2></div>
+<ol type="i">
+<li><b><p style="color:darkblue"><u>Object & Class</u></p></b></li>
+<table border="2">
+<tr><th>sl.No</th><th>Object</th><th>Class</th></tr>
+<tr><td>1</td><td>An object is an instance of a class.</td><td>Class is used as a template for declaring and creating the objects. </td></tr>
+<tr><td>2</td><td>Objects are allocated memory space whenever they are created.</td><td>When a class is created, no memory is allocated.</td></tr>
+<tr><td>3</td><td>Each object has its own values, which are associated with it.</td><td>Class does not contain any values which can be associated with the field.</td></tr>
+<tr><td>4</td><td>Objects are like a variable of the class.</td><td>A class is used to bind data as well as methods together as a single unit.</td></tr>
+</table>
+<p><ol><li><b><u>Syntax of class:</u></b><br> Declaring Class in C++ is as follows: <br>
+<pre>class (classname) {};</pre>
+</li><br>
+<li><b><u>Syntax of object:</u></b><br> Instantiating an object for a Class in C++ is as follows: <br>
+<pre>class Student {
+
+   public:
+
+      void put(){
+
+          cout<<“Function Called”<< endl; 
+
+      }
+
+};   // The class is declared here
+
+int main(){
+
+         Student s1;   // Object created
+
+         s1.put();</li>
+
+}</pre>
+</ol></p>
+<li><b><p style="color:darkblue"><u>Inheritance & Polymorphism</u></p></b></li>
+<table border="2">
+<tr><th>sl.No</th><th>Inheritance</th><th>Polymorphism</th></tr>
+<tr><td>1</td><td>Inheritance is one in which a new class is created (derived class) that inherits the features from the already existing class(Base class).</td><td>Whereas polymorphism is that which can be defined in multiple forms.</td></tr>
+<tr><td>2</td><td>Inheritance supports the concept of reusability and reduces code length in object-oriented programming.</td><td>Polymorphism allows the object to decide which form of the function to implement at compile-time (overloading) as well as run-time (overriding).</td></tr>
+<tr><td>3</td><td>Inheritance can be single, hybrid, multiple, hierarchical and multilevel inheritance.</td><td>Whereas it can be compiled-time polymorphism (overload) as well as run-time polymorphism (overriding).</td></tr>
+<tr><td>4</td><td>It is used in pattern designing.</td><td>	While it is also used in pattern designing.</td></tr></table>
+<p><ol><li><b><u>Example of Inheritance:</u></b><br>
+The class bike can be inherit from the class of two-wheel vehicles, which is turn could be a subclass of vehicles.  </li>
+
+<li><b><u>Example of  Polymorphism:</u> </b><br>
+The class bike can have method name set_color(), which changes the bike's color based on the name of color you have entered. </li></ol></p>
+</ol>
+<h2 id="basic"></h2>
+<div align="center">
+<h2><u>BASIC KNOWLEDGE</u></h2></div><ol type="1">
+<li><b><p style="color:darkblue ;"><u>Why we use namespace std in c++:</u></p></b>As the same name can’t be given to multiple variables, functions, classes, etc. in the same scope.So to overcome this situation namespace is introduced.</li>
+<li><b><p style="color: darkblue;"><u>Examples of keywords in c++:</u></p></b>class, delete, default, private, public, sizeof, catch, case, struct, static, new.</li>
+<li><b><p style="color: darkblue;"><u>Dynamic initialisation of variable:</u></p></b>Initialisation of the variable at runtime is refer to as dynamic initialisation.</li>
+<li><b><p style="color:darkblue ;"><u>Scope resolution operator:</u></p></b>It allows us global verson of variable.</li>
+<li><b><p style="color: darkblue;"><u>Reference variable:</u></p></b>A reference variableprovides an alternative name for a previously defined variable.</li>
+<li><b><p style="color: darkblue;"><u>delete:</u></p></b>It is memory release operator.<br>
+<b><p style="color: darkblue;"><u>endl:</u></p></b>next line operator.<br>
+<b><p style="color: darkblue;"><u>new:</u></p></b>It is memory allocation operator.<br>
+<li><b><p style="color: darkblue;"><u>visibility modes:</u></p></b>private, public, protected.</li>
+<li><b><p style="color: darkblue;"><u>Why protected visibility mode is used:</u></p></b>when features of base class to be available only to the derived class members but not to the outside world.</li>
+</ol> 
+<h2 id="inline"></h2>
+<div align="center">
+<h2><u>INLINE FUNCTION</u></h2></div>
+<p>An inline function is a function that is expended inline when it is executed.The compiler replaces the function call with the co-responding function code.Inline functionis the optimization technique used by the compiler.
+The keyword <b>inline</b>is specified at the beginning to tell the compiler that the function is an inline function.However it's up to compiler to decide whether to inline a function or not.<br>
+ <b><p style="color:darkblue"><u>syntax of inline function:</u></p></b>
+ <pre>inline return_type function_name(data_type arg1,data_type arg2)
+{
+   //definition of the function
+}</p></pre>
+ 
+<p style="color:darkblue"><b><u>Circumstances where the compiler does not consider inline function:</u></b></p><br>
+inline a function is not mandatory.It should be considered to be just a request,and it's execution totally depends on the compiler.The compiler decides whether to accept or decline the request of inline the function based on some circumstances as discussed below:
+<br><ul style="list-style-type:disc;">
+<li>The compiler denies the request to make a function an inline function if it contains a return statement but does not return anything.</li>
+<li>All those functions that contain a loop statement(for loop,while loop,or do-while lopp)can not be considered as an inline function by the compiler.</li>
+<li>The compiler will not consider a function to be an inline function ifit is recursive.</li>
+<li>If the function contains one or more static variables,the compiler will deny the request to make it an inline function</li>
+<li>If the function contains a switch or a go-to statemen,the compiler will deny the suggestion to make it an inline function.</li></ul></p>
+<h2 id="function"></h2>
+<div align="center">
+   <h2><u>FUNCTION OVERLOADING</u></h2></div>
+ <p>We can use the same function name to create functions that perform a varity of different task,this is known as function polymorphism.And in oop overloading refers to the use of the same thing for different purpose.c++ permits overloading of functions,same function name can be used but arguments and return type will be different in functioncalling.</p>
+ <p style="color:darkblue"><b><u>Syntax:</u></b></p>
+ <p><b><u>1.Parameters should have a different type:</u></b></p>
+ <p>
+add(int a, int b)<br>
+add(double a, double b)</p>
+ <p><b><u>2.Parameters should have a different number :</u></b></p>
+ <p>
+add(int a, int b)<br>
+add(int a, int b, int c)</p>
+ <p style="color:darkblue"><b><u>Rules of function overloading:</u></b></p>
+ <p>In function overloading, the function must differ in terms of data type, number or sequence of parameters. It cannot differ simply on the basis of the return type of function.</p>
+ <h2 id="op"></h2>
+ <div align="center">
+   <h2><u>OPERATOR OVERLOADING</u></h2></div>
+ <p>operator overloading deals with user define types of variables.It performs arithmetic operation among the objects.c++ has the ability to provide the operators with a special name for a data type.The machanism of giving such special meanings to an operator is known as operator overloading.</p>
+<p><b><u>Syntax:</u></b>
+   <pre>class className {
+   ... .. ...
+   public
+      returnType operator symbol (arguments) {
+         ... .. ...
+      } 
+   ... .. ...
+   };</p></pre>
+ <ul><p style="color:darkblue"><b><u>Rules for operator overloading:</u></b></p>
+ <li>The overloaded operator must have at least one operand,that is of user defined type.</li>
+ <LI>Only existing operators can be overloaded,new operators can not be created.</li>
+ <li>We cannot change the meaning of the operator.</li>
+ <li>Binary operators overloaded through a member function take one explicit arguments.</li></ul>
+ <ul><p style="color:darkblue"><b><u>Operators cannot be overloaded are:</u></b></p>
+ <li>sizeof</li>
+ <li>.(membership operator)</li>
+ <li>.*(pointer to member)</li>
+ <li>::(scope resolution operators)</li>
+ <li>?:(conditional operator)</li></ul>
+ <ul><p style="color:darkblue"><b><u>Operators that can be overloaded:</u></b></p>
+<li>Unary operators:  +, -, ++, —</li>
+<li>Binary operators:+, -, *, /, %</li>
+<li>Special operators ( [ ], () etc)</li></ul>
+<h2 id="static"></h2>
+<div align="center">
+   <h2><u>STATIC DATA MEMBER</u></h2></div>
+<p>Static data members are class members that are declared using static keywords. A static member has certain special characteristics. These are:<br>
+<ul>
+<li>Only one copy of that member is created for the entire class and is shared by all the objects of that class, no matter how many objects are created.</li>
+<li>It is initialized before any object of this class is being created, even before main starts.</li>
+<li>It is visible only within the class, but its lifetime is the entire program</li></ul>
+<p>c++ allows defining static data members within a class using the static keyword.
+When a data member is declared as static, then we must keep the following note in mind:
+<ul>
+<li>Irrespective of the number of objects created, only a single copy of the static member is created in memory.</li>
+<li>All objects of a class share the static member.</li>
+<li>All static data members are initiated to zero when the first object of that class is created.</li>
+<li>Static data members are visible only within the class but their lifetime is the entire program.</li></ul>
+<b><u>Syntax</u></b><br>
+static data_type data_member_name;</p>
+<p><b><u>Relevance:</u></b><br>
+Static data members are usually used to maintain values that are common for the entire class. , For Example, to keep a track of how many objects of a particular class have been created.</p>
+<h2 id="con"></h2>
+<div align="center">
+   <h2><u>CONSTRUCTOR</u></h2></div>
+<p>A constructor in C++ is a special ‘MEMBER FUNCTION’ having the same name as that of its class which is used to initialize some valid values to the data members of an object. It is executed automatically whenever an object of a class is created. </p>
+<p><b><u>syntax:</u></b>
+<pre>class CLASSNAME
+{
+   ………
+   public :
+         CLASSNAME([parameter_list])  // constructor definition
+         {
+            . . . . . . 
+         }
+         . . . . . . . .
+   };</pre></p>
+<p><u><b>Program:</b></u></p>
+<img src="images/const_pro.png" width="400" height="500">
+<p><u><b>output:</b></u></p>
+<img src="images/const_output.png" width="300" height="100">
+   <p><b><u>The following are the key points while defining constructors for a class:</u></b>
+<ul>
+<li>A constructor has the same name as that of the class to which it belongs to.</li>
+<li>If you don’t openly provide a constructor of your own then the compiler generates a default constructor for you.</li>
+<li>A constructor can preferably be used for initialization and not for input/output operations.</li>
+<li>Constructors may not be static.</li>
+<li>Constructors are also used to locate memory at run time using the new operator.</li>
+<li>Constructors cannot be virtual.</li>
+<li>A constructor is executed repeatedly whenever the objects of a class are created.</li>
+<li>We can declare more than one constructor in a class i.e. constructors can be overloaded.</li></ul></p>
+<p><b><u>Types of Constructors in C++:</u></b>
+<ol type="a";>
+<li><b><u><p style="color:darkblue">Default Constructor:</p></u></b></li>
+<ul><li>A constructor to which no arguments are passed is called the Default constructor. It is also called a constructor with no parameters.</li>
+<li>Using the default constructor, data members can be initialized to some realistic values in its definition even though no arguments are specified explicitly. Each time an object is created, a constructor is invoked. If we define objects and classes without defining any constructor for a class. So in such a situation, the compiler automatically generates a constructor of its own without any parameters i.e. Default Constructor.</li>
+<li>This compiler generates a default constructor which is invoked automatically whenever any object of the class is created but doesn’t perform any initialization. However, if you define a default constructor explicitly, the compiler no longer generates a default constructor for you.</li></ul>
+<li><b><u><p style="color:darkblue">Parameterized Constructor:</p></u></b></li>
+<ul><li>Unlike default constructors which do not take any parameters, it is however possible to pass one or more arguments to a constructor. </li>
+<li>Constructors that can take arguments are known as parameterized constructors. </li></ul>
+<li><b><u><p style="color:darkblue">Copy constructor:</p></u></b></li>
+<ul><li>The copy constructor in c++ is a constructor that creates an object by initialising it with a previously created object of the same class.</li></ul>
+<h2 id="des"></h2>
+<div align="center">
+<h2><u>DESTRUCTOR</u></h2></div>
+<p>Destructor is an instance member function which is invoked automatically whenever an object is going to be destroyed. Meaning, a destructor is the last function that is going to be called before an object is destroyed.
+<ul style="list-style-type:square";>
+<li>Destructor is also a special member function like constructor. Destructor destroys the class objects created by constructor. </li>
+<li>Destructor has the same name as their class name preceded by a tiled (~) symbol.</li>
+<li>It is not possible to define more than one destructor. </li>
+<li>The destructor is only one way to destroy the object create by constructor. Hence destructor can-not be overloaded.</li>
+<li>Destructor neither requires any argument nor returns any value.</li>
+<li>It is automatically called when object goes out of scope. </li>
+<li>Destructor release memory space occupied by the objects created by constructor.</li>
+<li>In destructor, objects are destroyed in the reverse of an object creation.</li>
+<li>if the object is created by using new or the constructor uses new to allocate memory which resides in the heap memory or the free store, the destructor should use delete to free the memory.   
+</li></ul></p>
+<p><b><u>Syntax:</u></b>
+<ol type="a";>
+<li><p style="color:darkblue"><b><u>Syntax for defining the destructor within the class:</u></b></p><br>
+~ class-name()<br>
+{
+<br>
+}
+</li>
+
+<li><p style="color:darkblue"><b><u>Syntax for defining the destructor outside the class:</u></b></p><br>
+class-name: : ~ class-name()<br>
+{
+<br>
+}
+</li></ol></p>
+<p><u><b>Program:</b></u></p>
+<img src="images/des_pro.png" width="400" height="500">
+<p><u><b>output:</b></u></p>
+<img src="images/des_output.png" width="200" height="100">
+<p><b><p style="color:darkblue"><u>Properties of Destructor:</u></p></b>
+<ul>
+<li>Destructor function is automatically invoked when the objects are destroyed.</li>
+<li>It cannot be declared static or const.</li>
+<li>The destructor does not have arguments.</li>
+<li>It has no return type not even void.</li>
+<li>An object of a class with a Destructor cannot become a member of the union.</li>
+<li>A destructor should be declared in the public section of the class.</li>
+<li>The programmer cannot access the address of destructor.</li></ul></p>
+<p><b><p style="color:darkblue"><u>When is destructor called? </u></p></b>
+<ul>
+A destructor function is called automatically when the object goes out of scope: 
+<li> the function ends </li>
+<li> the program ends </li>
+<li> a block containing local variables ends</li> 
+<li> a delete operator is called  </li></ul></p>
+<p><b><p style="color:darkblue"><u>How are destructors different from a normal member function?</u></p></b> <br>
+Destructors have same name as the class preceded by a tilde (~).
+Destructors don’t take any argument and don’t return anything.</p>
+<h2 id="in"></h2>
+<div align="center">
+<h2><u>INHERITANCE</u></h2></div>
+<p>The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming. <br>
+Inheritance is a feature or a process in which, new classes are created from the existing classes. 
+The new class created is called “derived class” or “child class” and the existing class is known as the “base class” or “parent class”. The derived class now is said to be inherited from the base class.<br>
+When we say derived class inherits the base class, it means, the derived class inherits all the properties of the base class, without changing the properties of base class and may add new features to its own. These new features in the derived class will not affect the base class. The derived class is the specialized class for the base class.
+<ol type="a">
+<li>Sub Class: The class that inherits properties from another class is called Subclass or Derived Class. </li>
+<li>Super Class: The class whose properties are inherited by a subclass is called Base Class or Superclass. </li></ol>
+<p><u><b>Syntax: </b></u>
+<pre>class (derived_class_name):(access-specifier) (base_class_name)
+   {
+           //body
+   }</pre>
+</p>
+<p><u><b>Modes of Inheritance:</b></u>
+<ul style="list-style-type:square;"> There are 3 modes of inheritance.
+
+<li><u>Public Mode:</u><br>
+ If we derive a subclass from a public base class. Then the public member of the base class will become public in the derived class and protected members of the base class will become protected in the derived class.</li>
+<li><u>Protected Mode: </u><br>
+If we derive a subclass from a Protected base class. Then both public members and protected members of the base class will become protected in the derived class.</li>
+<li><u>Private Mode:</u><br> 
+If we derive a subclass from a Private base class. Then both public members and protected members of the base class will become Private in the derived class.</li>
+</p>
+<p><b><u>Types Of Inheritance:-</u></b>
+<ol>
+<li>Single inheritance</li>
+<li>Multilevel inheritance</li>
+<li>Multiple inheritance</li>
+<li>Hierarchical inheritance</li>
+<li>Hybrid inheritance</li></ol></p>
+<div align="center">
+<h2><u>SINGLE INHERITANCE</u></h2></div>
+<p>In single inheritance, a class is allowed to inherit from only one class. i.e. one subclass is inherited by one base class only.</p>
+<p><b>Diagram:</b></p>
+<img src="images/single_inheritance_dia.png" width="300" height="200">
+<p><b>syntax:</b></p>
+<img src="images/single_syntax.png" width="300" height="300">
+<p><b><u>program:</u></b></p>
+<img src="images/single_inheritance.png" width="400" height="500">
+<table border="2">
+<tr><th><p style="color:red">output:</p>This is a Vehicle</th></tr></table>
+<div align="center">
+<h2><u>MULTIPLE INHERITANCE</u></h2></div>
+Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.</p>
+<p><b>Diagram:</b></p>
+<img src="images/multiple_inheritance_dia.png" width="500" height="300">
+<p><b>syntax:</b></p>
+<img src="images/multiple_syntax.png" width="300" height="300">
+<p><b><u>program:</u></b></p>
+<img src="images/multiple_inheritance.png" width="400" height="500">
+<table border="2">
+<tr><th><p style="color:red">output:</p>This is a Vehicle<br>
+This is a 4 wheeler Vehicle</th></tr></table>
+<div align="center">
+<h2><u>MULTILEVEL INHERITANCE</u></h2></div>
+<p>In this type of inheritance, a derived class is created from another derived class.</p>
+<p><b>Diagram:</b></p>
+<img src="images/multilevel_dia.png" width="500" height="300">
+<p><b>syntax:</b></p>
+<img src="images/multilevel_syntax.png" width="300" height="300">
+<p><b><u>program:</u></b></p>
+<img src="images/multilevel_inheritance.png" width="400" height="500">
+<table border="2">
+<tr><th><p style="color:red">output:</p>This is a Vehicle<br>
+Objects with 4 wheels are vehicles<br>
+Car has 4 Wheels</th></tr></table>
+<div align="center">
+<h2><u>HIERARCHICAL INHERITANCE</u></h2></div>
+<p> In this type of inheritance, more than one subclass is inherited from a single base class. i.e. more than one derived class is created from a single base class.</p>
+<p><b>Diagram:</b></p>
+<img src="images/hie_dia.png" width="500" height="300">
+<p><b>syntax:</b></p>
+<img src="images/hie_syntax.png" width="300" height="300">
+<p><b><u>program:</u></b></p>
+<img src="images/hie_inheritance.png" width="400" height="500">
+<table border="2">
+<tr><th><p style="color:red">output:</p>This is a Vehicle<br>
+This is a Vehicle</th></tr></table>
+<div align="center">
+<h2><u>HYBRID INHERITANCE</u></h2></div>
+<p>Hybrid Inheritance is implemented by combining more than one type of inheritance. For example: Combining Hierarchical inheritance and Multiple Inheritance. 
+Below image shows the combination of hierarchical and multiple inheritances:</p>
+<p><b>Diagram:</b></p>
+<img src="images/hybrid_dia.png" width="500" height="300">
+<p><b><u>program:</u></b></p>
+<img src="images/hybrid.png" width="400" height="500">
+<table border="2">
+<tr><th><p style="color:red">output:</p>This is a Vehicle<br>
+Fare of Vehicle</th></tr></table>
+<h2 id="frd"></h2>
+<div align="center">
+<h2><u>FRIEND FUNCTION</u></h2></div>
+<P>when more than one class need to share particular function,that common function is called friend function.
+ A friend function can be: <br>
+a) A member of another class <br>
+b) A global function </p>
+<p><b><u>Characteristics:</u></b>
+<ul style="list-style-type:square;">
+<li> A friend function is a special function in C++ which in-spite of not being member function of a class has privilege to access private and protected data of a class.</li>
+<li>A friend function is a non member function or ordinary function of a class, which is declared as a friend using the keyword “friend” inside the class. By declaring a function as a friend, all the access permissions are given to the function.</li>
+<li>The keyword “friend” is placed only in the function declaration of the friend function and not in the function definition.</li>
+<li>When friend function is called neither name of object nor dot operator is used. However it may accept the object as argument whose value it want to access.</li>
+<li>Friend function can be declared in any section of the class i.e. public or private or protected.</li></ul></p>
+<p><b>syntax:</b></p>
+<img src="images/frd_syntax.png" width="300" height="100">
+<p><b><u>program:</u></b></p>
+<img src="images/friend.png" width="400" height="500">
+<table border="2">
+<tr><th><p style="color:red">output:</p>Enter the First No: 21<br>
+Enter the Second No:32<br>
+Maximum Number is    32</th></tr></table>
+<p><b><u>Following are some important points about friend functions and classes:</u></b>
+<ul style="list-style-type:square">
+<li> Friends should be used only for limited purpose. too many functions or external classes are declared as friends of a class with protected or private data, it lessens the value of encapsulation of separate classes in object-oriented programming.</li>
+<li> Friendship is not mutual. If class A is a friend of B, then B doesn’t become a friend of A automatically.</li>
+<li> Friendship is not inherited.</li>
+<li> The concept of friends is not there in Java. </li></ul></p>
+<h2 id="file"></h2>
+<div align="center">
+<h2><u> FILE HANDLING</u></h2></div>
+<p>File handling is used for store a data permanently in computer. Using file handling we can store our data in secondary memory (Hard disk).
+How to achieve the File Handling<br>
+For achieving file handling we need to follow the following steps:-
+<ul style="list-style-type:square;">
+ <li><b>STEP 1-</b>Naming a file</li>
+<li> <b>STEP 2-</b>Opening a file</li>
+<li> <b>STEP 3-</b>Writing data into the file</li>
+ <li><b>STEP 4-</b>Reading data from the file</li>
+ <li><b>STEP 5-</b>Closing a file.</li></ul></p>
+ <p>Classes for File stream operations :-
+ <ol>
+The I/O system of C++ contains a set of classes which define the file handling methods. These include ifstream, ofstream and fstream classes. These classes area derived from fstream and from the corresponding iostream class. These classes, designed to manage the disk files, are declared in fstream and therefore we must include this file in any program that uses files.
+<li> <p style="color:darkblue"><b><u>ios:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>ios stands for input output stream.</li>
+<li>This class is the base class for other classes in this class hierarchy.</li>
+<li>This class contains the necessary facilities that are used by all the other derived classes for input and output operations.</li></ul></li>
+<li><p style="color:darkblue"> <b><u>istream:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>istream stands for input stream.</li>
+<li>This class is derived from the class ‘ios’.</li>
+<li>This class handle input stream.</li>
+<li>The extraction operator(>>) is overloaded in this class to handle input streams from files to the program execution.</li>
+<li>This class declares input functions such as get(), getline() and read().</li></ul></li>
+ 
+<li><p style="color:darkblue"><b><u>ostream:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>ostream stands for output stream.</li>
+<li>This class is derived from the class ‘ios’.</li>
+<li>This class handle output stream.</li>
+<li>The insertion operator(<<) is overloaded in this class to handle output streams to files from the program execution.</li>
+<li>This class declares output functions such as put() and write().</li></ul>
+<li><p style="color:darkblue"><b><u> streambuf:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>This class contains a pointer which points to the buffer which is used to manage the input and output streams.</li></ul></li>
+<li> <p style="color:darkblue"><b><u>fstreambase:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>This class provides operations common to the file streams. Serves as a base for fstream, ifstream and ofstream class. </li>
+<li>This class contains open() and close() function.</li></ul>
+<li><p style="color:darkblue"> <b><u>ifstream:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>This class provides input operations.</li>
+<li>It contains open() function with default input mode. </li>
+<li>Inherits the functions get(), getline(), read(), seekg() and tellg() functions from the istream.</li></ul></li>
+<li><p style="color:darkblue"><b><u> ofstream:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>This class provides output operations.</li>
+<li>It contains open() function with default output mode. </li>
+<li>Inherits the functions put(),  write(), seekp() and tellp() functions from the ostream.</li></ul></li>
+<li><p style="color:darkblue"><b><u> fstream:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>This class provides support for simultaneous input and output operations.</li>
+<li>Inherits all the functions from istream and ostream classes through iostream.</li></ul></li>
+<li><p style="color:darkblue"><b><u> filebuf:-</b></u></p>
+<ul style="list-style-type:square;">
+
+<li>Its purpose is to set the file buffers to read and write.</li>
+<li>We can also use file buffer member function to determine the length of the file.</li></ul></li>
+</ol></p>
+<p>In C++, files are mainly dealt by using three classes fstream, ifstream, ofstream available in fstream headerfile.
+<table border="2">
+<tr>
+<th>ofstream:</th> <th>Stream class to write on files </th></tr>
+<th>ifstream: </th><th>Stream class to read from files </th></tr>
+<th>fstream: </th><th>Stream class to both read and write from/to files. </th></tr></table></p>
+<img src="images/file_modes.png" width="700" height="500">
+<h2 id="this"></h2>
+<div align="center">
+   <h2><u>this Pointer</u></h2></div>
+   <p>Is is a pointer that points to the object for which this function ic called.This unique pointer is automatically passed to a member function when it is called.this pointer acts as an implicit arguments to all the member function.One important application of the pointer this is to return the object it points to
+      <br>
+      example:</p>
+      <img src="images/this_pointer.png" width="400" height="400">
+      <table border="2">
+         <tr><th><p style="color:red">output:</p> x = 20</th></tr></table>
+         <h2 id="vir"></h2>
+         <div align="center">
+            <h2><u>VIRTUAL FUNCTION</u></h2></div>
+            <P>A virtual function in C++ is a base class member function that you can redefine in a derived class to achieve polymorphism. You can declare the function in the base class using the virtual keyword. A virtual function in C++ helps ensure you call the correct function via a reference or pointer. 
+            </P>
+            <P><U><B>Rules of Virtual Function in C++?</B></U>
+               <UL style="list-style-type:square ;">
+               There are a few rules you need to follow to create a virtual function in C++. These rules are:
+               
+               <li>The functions cannot be static</li>
+                  <li>You derive them using the “virtual” keyword</li>
+                     <li> Virtual functions in C++ needs to be a member of some other class (base class)</li>
+                        <li>They can be a friend function of another class</li>
+                           <li> The prototype of these functions should be the same for both the base and derived class</li>
+                              <li> Virtual functions are accessible using object pointers</li>
+                                 <li> Redefining the virtual function in the derived class is optional, but it needs to be defined in the base class</li>
+                                    <li> The function call resolving is done at run-time</li>
+                                       <li> You can create a virtual destructor but not a constructor</li></UL></P>
+      <p><b><u>Features of virtual function:</u></b>
+      <ul>
+         <li>virtual functions are mainly used to achieve run-time polymorphism.</li>
+         <li>virtual function should be accessed using pointer or reference of base class time to achieve runtime polymorphism.</li>
+      </ul></p>
+      <p><b><u>Limitations of Virtual Functions:</u></b>
+      <ul>
+         <li>Slower: The function call takes slightly longer due to the virtual mechanism and makes it more difficult for the compiler to optimize because it does not know exactly which function is going to be called at compile time.</li>
+         <li>Difficult to Debug: In a complex system, virtual functions can make it a little more difficult to figure out where a function is being called from.</li>
+      </ul></p>
+       <p>program:</p>
+       <img src="images/virtual_func.png" width="400" height="600">
+       <table border="2">
+         <tr><th><p style="color:red">output:</p>Output Derived class<br>
+            Display Derived class</th></tr></table>       
+   <p><b><u>Compile-Time VS Runtime Behavior of Virtual Functions in C++:
+   </u></b></p> 
+   <table border="4">A virtual function in C++ exhibits two different types of behavior: compile-time and runtime. 
+      <tr><th></th><th>Compile-time behavior</th><th>Runtime behavior</th></tr>
+      <tr><th>Alternative name</th><td>Early binding </td><td>Late binding</td></tr>
+      <tr><th>How is it achieved</th><td>The type of pointer</td><td>Depending on the location where the pointer is pointing</td></tr>
+   </table>
+   <div align="center">
+<h1><u>PURE VIRTUAL FUNCTION</u></h1></div>
+<p>A pure virtual function in C++, also known as the do-nothing function, is a virtual function that does not perform any task. 
+   It is only used as a placeholder and does not contain any function definition (do-nothing function). It is declared in an abstract base class. These types of classes cannot declare any objects of their own. You derive a pure virtual function in C++ using the following syntax:<br>
+
+   Virtual void class_name() = 0;</p>
+   <p><u><b>program:</b></u></p>
+   <img src="images/pure_vir.png" width="400" height="600">
+   <table border="2">
+      <tr><th><p style="color:red">output:</p>Class derived from the Base class.</th></tr></table>       
+      <h2 id="exp"></h2>
+<div align="center">
+         <h1><u>EXCEPTION HANDLING</u></h1></div>
+         <p>An exception is a problem that arises during the execution of a program. A C++ exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.
+
+            Exceptions provide a way to transfer control from one part of a program to another. C++ exception handling is built upon three keywords: try, catch, and throw.
+         <ol>
+            <li><b><u>throw</u>:</b>A program throws an exception when a problem shows up. This is done using a throw keyword.</li>
+            <li><b><u>catch</u>:</b>A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The catch keyword indicates the catching of an exception.</li>
+            <li><b><u>try</u>:</b>A try block identifies a block of code for which particular exceptions will be activated. It's followed by one or more catch blocks.</li>
+         </ol>
+         Assuming a block will raise an exception, a method catches an exception using a combination of the try and catch keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code, and the syntax for using try/catch as follows −
+      </p>
+      <img src="images/exp1.png" width="300" height="200">
+      <p>You can list down multiple catch statements to catch different type of exceptions in case your try block raises more than one exception in different situations.</p>
+      <p><b><u>Throwing Exceptions</u></b><br>
+         Exceptions can be thrown anywhere within a code block using throw statement. The operand of the throw statement determines a type for the exception and can be any expression and the type of the result of the expression determines the type of exception thrown.
+<br>
+         Following is an example of throwing an exception when dividing by zero condition occurs −</p>
+      <img src="images/exp2.png" width="300" height="100">
+      <p><b><u>Catching Exceptions</u></b>
+      <br>
+      The catch block following the try block catches any exception. You can specify what type of exception you want to catch and this is determined by the exception declaration that appears in parentheses following the keyword catch.
+   <br>
+   <img src="images/exp3.png" width="300" height="100"><br>
+   Above code will catch an exception of ExceptionName type. If you want to specify that a catch block should handle any type of exception that is thrown in a try block, you must put an ellipsis, ..., between the parentheses enclosing the exception declaration as follows −
+   <br>
+   <img src="images/exp4.png" width="300" height="100">
+</p>
+<p><u><b>C++ Standard Exceptions:</b></u>
+   C++ provides a list of standard exceptions defined in <exception> which we can use in our programs. These are arranged in a parent-child class hierarchy shown below −</p>
+      <img src="images/exp5.png" width="700" height="600">
+<p><u><b>Here is the small description of each exception mentioned in the above hierarchy −</b></u></p>
+<table border="6">
+   <tr><th>sl.No</th><th>Exception & Description</th></tr>
+   <tr><th>1</th><td>std::exception
+
+      An exception and parent class of all the standard C++ exceptions.</td></tr>
+      <tr><th>2</th><td>std::bad_alloc
+
+         This can be thrown by new.</td></tr>
+<tr><th>3</th><td>std::bad_cast
+
+   This can be thrown by dynamic_cast.</td></tr>
+<tr><th>4</th><td>std::bad_exception
+
+   This is useful device to handle unexpected exceptions in a C++ program.</td></tr>
+<tr><th>5</th><td>std::bad_typeid
+
+   This can be thrown by typeid.</td></tr>
+<tr><th>6</th><td>std::logic_error
+
+   An exception that theoretically can be detected by reading the code.</td></tr>
+<tr><th>7</th><td>std::domain_error
+
+   This is an exception thrown when a mathematically invalid domain is used.</td></tr>
+<tr><th>8</th><td>std::invalid_argument
+
+   This is thrown due to invalid arguments.</td></tr>
+<tr><th>9</th><td>std::length_error
+
+   This is thrown when a too big std::string is created.</td></tr>
+<tr><th>10</th><td>std::out_of_range
+
+   This can be thrown by the 'at' method, for example a std::vector and std::bitset<>::operator[]().</td></tr>
+<tr><th>11</th><td>std::runtime_error
+
+   An exception that theoretically cannot be detected by reading the code.</td></tr>
+<tr><th>12</th><td>std::overflow_error
+
+   This is thrown if a mathematical overflow occurs.</td></tr>
+<tr><th>13</th><td>std::range_error
+
+   This is occurred when you try to store a value which is out of range.</td></tr>
+<tr><th>14</th><td>std::underflow_error
+
+   This is thrown if a mathematical underflow occurs.</td></tr>
+</table>
+
+
+
+<script type="text/javascript">
+   window.addEventListener('scroll',function(){
+       var scroll = document.querySelector('.scrollTop');
+       scroll.classList.toggle("active" ,window.scrollY > 500)
+   })
+</script>
+
+
+
+</body>
+</html>

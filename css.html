@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> CSS </title>
+        <link rel="stylesheet" href="allnotecss.css">
+        <i class="fa-thin fa-alicorn"></i>
+        <style>
+            table, th, td 
+            {
+              border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#name"><div class="scrollTop"></div></a>
+        
+        <div class="banner">
+            <h2 id="name"></h2>
+            <h1>CSS(Cascading Style Sheets)</h1>
+        </div>
+
+        <div class="souvik">
+            <b> <h2 align="center">Overview of CSS</h2></b>
+            <p>CSS is acronym of Cascading Style Sheets. It helps to define the presentation of HTML elements as a separate file known as CSS file having .css extension.<br>
+            CSS helps to change formatting of any HTML element by just making changes at one place. All changes made would be reflected automatically to all of the web pages of the website in which that element appeared.</p><br><br>
+            
+            <table>
+                <tr><th><h2>Table of Content</h2>
+                    <a href="#b1">Types of CSS</a><br>
+                    <a href="#b2">What does CSS mean?</a><br>
+                    <a href="#b3">How CSS is different from HTML?</a><br>
+                    <a href="#b4">CSS Rules</a><br>
+                    <a href="#b5">Characteristics of CSS:</a><br>
+                    <a href="#b6">CSS | Colors</a><br>
+                    <a href="#b7">CSS Margins and Padding</a><br>
+                    <a href="#b8">Difference between Margin and Padding: </a><br>
+                    <a href="#b9">CSS Box model</a><br>
+                    <a href="#b10">CSS Outline</a><br>
+                    <a href="#b11">CSS | Display property</a><br>
+                    <a href="#b12">CSS Positioning Elements</a><br>
+                    <a href="#b13">CSS border Property</a><br>
+                    <a href="#b14">CSS | border-image Property</a><br>
+                    <a href="#b15">CSS font-family Property</a><br>
+                    <a href="#b16">CSS | grid Property</a><br>
+                    <a href="#b17">CSS | rgb() Function</a><br>
+                    <a href="#b18">CSS | url() Function</a><br>
+                    <a href="#b19">CSS | 3D Transforms</a><br>
+                    <a href="#b20">CSS | Pagination</a><br>
+                    <a href="#b21">CSS | CSS Animations</a><br>
+                   
+                </th></tr>
+            </table><br><br><br>
+
+            <h2 id="name"></h2>
+            <h2 id="b1">There are three types of CSS</h2>
+            <ul>
+                <li><b> Inline:</b> Inline CSS contains the CSS property in the body section attached with the element known as inline CSS.</li><br>
+
+                <pre>Syntax: 
+                    < Tagname STYLE = “ Declaration1 ; Declaration2 “>  …. < / Tagname>
+                </pre><br>
+                
+                <li><b>Internal or Embedded:</b> The CSS ruleset should be within the HTML file in the head section i.e the CSS is embedded within the HTML file. </li><br>
+
+                <pre>Syntax: 
+                < head> < title> …. < /title>
+                    < style type =”text/css”>
+                       …….CSS Rules/Styles….
+                    < /style>		
+                 < /head></pre><br>
+                
+                <li><b>External:</b> External CSS contains a separate CSS file that contains only style property with the help of tag attributes.</li>
+                <pre>Syntax:
+                    < head> < link rel= “stylesheet”  type=”text/css” href= “url of css file”>
+                    < /head>
+                </pre>
+                
+            </ul><br><br><br>
+
+            <h2 id="b2">What does CSS mean?</h2>
+            <p>Tags for formatting a web page were never intended in HTML. HTML was established to define a web page’s content. The addition of tags like < font > and color attributes to HTML created a big problem for web developers. The creation of large websites, where fonts and color information were added to each page, became a time-consuming and costly procedure. CSS was established to address this issue. CSS eliminated the HTML page’s style formatting.</p>
+            
+
+            <h2 id="b3">How CSS is different from HTML?</h2>
+            <ul>
+                <li>Solves a big problem: Font, color, background style, element alignments, border, and size tags had to be duplicated on each web page before CSS. This was a lengthy procedure.</li>
+                <li>Saves a lot of time: Because CSS style definitions are stored in external CSS files, updating only one file can modify the entire website.</li>
+                <li>Provide more attributes: CSS gives more specific features for defining the look and feel of a website than simple HTML.</li>
+                <li>Pages load faster: CSS doesn’t require you to write HTML tag attributes all of the time. A tag’s rule can be written once and applied to all instances of the tag. As a result, CSS uses less code, resulting in speedier download times.</li>
+                <li>Easier Website maintenance: CSS makes website maintenance much easier. If we need to make a global change to the file, we can simply alter the style, which will update all of the elements on the web page.</li>
+                <li>Multiple device compatibility: We can use CSS with older language versions because it is compatible with them. CSS makes it possible to optimize material for several devices.</li>
+            </ul>
+            
+
+            <h2 id="b4">CSS Rules</h2>
+            <p>CSS Rules are the styles that we have to create in order to create style sheets. These rules define appearance of associated HTML element. The general form of CSS <b>syntax</b> is as follows:</p> 
+            <pre><b>Syntax</b>
+            Selector { property: value ; } 
+        </pre>
+
+        <h2 id="b5">Characteristics of CSS:</h2>
+        <ul>
+            <li>Maintenance: It is easy to maintain, changing in a single place will affect globally in your web site. No need to change every specific place.</li>
+            <li>Time-saving: You can easily use any single CSS script at multiple places.</li>
+            <li>Support: CSS is supported by all the browsers and search engines.</li>
+            <li>Cache storing: CSS can store web applications locally with the help of offline cache so you can see the web site when you are offline.</li>
+            <li>Native front-end: CSS contains a huge list of attributes and function that is helpful to design the HTML page.</li>
+            <li>Selectors: In CSS, there are lots of selectors (ID selectors, Class Selectors, etc.) that will be helpful to perform specific tasks.</li>
+        </ul><br><br>
+
+        <h2 id="b6">CSS | Colors</h2>
+        <p>CSS Color property is used to set the color of HTML elements. This property is used to set font color, background color etc. <br>
+
+        Color of an element can be defined in the following ways:</p>
+            <ol type="1">
+                <li>Built-In Color</li>
+                <pre>Syntax:
+             h1 {
+                color: color-name;
+                }</p>
+                </pre>
+
+                <li>RGB Format</li>
+                <pre>Syntax:
+             h1 {
+                    color: rgb(R, G, B);
+                }
+                    </pre>
+
+                <li>RGBA Format</li>
+                <pre>Syntax:
+             h1 {
+                    color:rgba(R, G, B, A);
+                }
+                </pre>
+
+                <li>Hexadecimal Notation</li>
+                <pre>Syntax:
+             h1 {
+                    color:#(0-F)(0-F)(0-F)(0-F)(0-F)(0-F);
+                }
+                </pre>
+
+                <li>HSL</li>
+                <pre>Syntax:
+             h1 {
+                    color:hsl(H, S, L);
+                }
+                </pre>
+
+                <li>HSLA</li>
+                <pre>Syntax:
+             h1 {
+                    color:hsla(H, S, L, A);
+                }
+                </pre>
+
+                <li>Text Color:</li>
+                <pre>Syntax:
+             h1 {
+                    color:color_name;
+                }
+                </pre>
+
+                <li>Background Color:</li>
+                <pre>Syntax:
+             h1 {
+                    background-color:color_name;
+                }
+                </pre>
+
+                <li>Border Color: </li>
+                <pre>Syntax:
+             h1 {
+                    border-style:solid/dashed/dotted
+                    border-color:color_name;
+                }
+                </pre>
+            <ol>
+            
+
+        <h2 id="b7">CSS Margins and Padding</h2>
+        <p><b>CSS Margins:</b> CSS margins are used to create space around the element. We can set the different sizes of margins for individual sides(top, right, bottom, left).</p>
+        <p>Margin properties can have the following values:</p>
+            <ol>
+                <li>Length in cm, px, pt, etc.</li>
+                <li>Width % of the element.</li>
+                <li>Margin calculated by the browser: auto.</li>
+            </ol>
+            <pre><b>Syntax:</b> 
+            body
+            {
+                margin: size;
+            }</pre>
+
+            <p><b>CSS Padding:</b>CSS paddings are used to create space around the element, inside any defined border. We can set different paddings for individual sides(top, right, bottom, left). It is important to add border properties to implement padding properties.</p>
+            <p>Padding properties can have the following values: </p>
+            <ul>
+                <li>Length in cm, px, pt, etc.</li>
+                <li>Width % of the element.</li>
+            </ul>
+            <pre><b>Syntax:</b>  
+        body
+            {
+                padding: size;
+            }</pre>
+
+            <h2 id="b8">Difference between Margin and Padding:</h2>
+            <ul>
+                <li>Margin is used to create space around elements and padding is used to create space around elements inside the border.</li>
+                <li>We can set the margin property to auto but we cannot set the padding property to auto.</li>
+                <li>In Margin property we can allow negative or float number but in padding we cannot allow negative values.</li>
+                <li>Margin and padding target all 4 sides of the element. Margin and padding will work without the border property also.</li>
+            </ul>
+
+        <h2 id="b9">CSS Box model</h2>  
+        <p>The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model. Box-Model has multiple properties in CSS. Some of them are given below: </p>
+        <ol>
+            <li><b>content: </b>This property is used to displays the text, images, etc, that can be sized using the width & height property.</li>
+            <li><b>padding: </b>This property is used to create space around the element, inside any defined border.</li>
+            <li><b>border: </b>This property is used to cover the content & any padding, & also allows to set the style, color, and width of the border.</li>
+            <li><b>margin: </b>This property is used to create space around the element ie., around the border area.</li>
+            <li><b>Content Area:</b> This area consists of content like text, images, or other media content. It is bounded by the content edge and its dimensions are given by content-box width and height.</li>
+            <li><b>Padding Area:</b> It includes the element’s padding. This area is actually the space around the content area and within the border-box. Its dimensions are given by the width of the padding-box and the height of the padding-box.</li>
+            <li><b>Border Area:</b> It is the area between the box’s padding and margin. Its dimensions are given by the width and height of the border.</li>
+            <li><b>Margin Area:</b> This area consists of space between border and margin. The dimensions of the Margin area are the margin-box width and the margin-box height. It is useful to separate the element from its neighbors.</li>
+        </ol>
+        <h2 id="b10">CSS Outline</h2>
+        <p>The outline CSS shorthand property allows drawing a line around the element, outside the border. It is used to set all the properties of the outline in a single declaration. CSS outline properties can be categorized into 4 types, namely, Outline-style, Outline-color, Outline-width & Outline-offset. We will discuss all the types of outline properties sequentially through the examples.</p>
+
+        <p><b>Properties:</b> There are lots of properties comes under the CSS outline collection all of them are well described with the example.</p>
+        <ol>
+            <li><b>Outline-style:</b> It is used to set the appearance of the outline of an element ie., it tells us the style or type of outline. Any other outline property cannot be accessed without setting the outline-style. If absent then the default style will be set to none.</li>
+            <pre><b>Syntax:</b>
+        outline-style: auto|none|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;</pre>
+                
+            <li><b>Outline-color:</b> It is used to sets the outline color of an element. The color can be set by its name ie., rgb value or a hex value, etc. If absent then the default color will be the current color.</li>
+            <pre><b>Syntax:</b>
+        outline-color: < color> | invert | inherit;</pre>
+
+            <li><b>Outline-width:</b> It is used to specify the width of this outline for a specific element. The width of the outline can be set by specifying the size of the width in px, cm, pt, etc, or by using terms like a thin, thick, medium.  If absent then the default width will be the medium.</li>
+            <pre><b>Syntax:</b>
+        outline-width: medium|thin|thick|length|initial|inherit;</pre>
+
+            <li><b>Outline-offset:</b> The CSS outline-offset Property sets the amount of space between an outline and the edge or border of an element. An outline is a line drawn around elements outside the border edge. The space between the element and its outline is transparent. Also, the outline may be non-rectangular. The default value is 0.</li>
+                <pre><b>Syntax:</b>
+        outline-offset: length|initial|inherit;</pre>
+
+        <h2 id="b11">CSS | Display property</h2>
+        <p>The Display property in CSS defines how the components(div, hyperlink, heading, etc) are going to be placed on the web page. As the name suggests, this property is used to define the display of the different parts of a web page. </p>
+
+        <pre><b>Syntax:</b>
+            display: value;</pre>
+
+        <h3>Property values </h3>
+        <img src="images/c1.jpg" width="600" height="500" >
+
+        <h2 id="b12">CSS Positioning Elements</h2>
+        <p>The position property in CSS tells about the method of positioning for an element or an HTML entity. There are five different types of position property available in CSS:</p>
+        <ol>
+            <li><b>Fixed :- </b>Any HTML element with position: fixed property will be positioned relative to the viewport. An element with fixed positioning allows it to remain at the same position even we scroll the page. We can set the position of the element using the top, right, bottom, left.</li><br>
+            <li><b>Static :- </b>This method of positioning is set by default. If we don’t mention the method of positioning for any element, the element has the position: static method by default. By defining Static, the top, right, bottom and left will not have any control over the element. The element will be positioned with the normal flow of the page.</li><br>
+            <li><b>Relative :- </b>An element with position: relative is positioned relatively with the other elements which are sitting at top of it. If we set its top, right, bottom, or left, other elements will not fill up the gap left by this element. An element with its position set to relative and when is adjusted using top , bottom ,left, right will be positioned relative to its original position.</li><br>
+            <li><b>Absolute :- </b>An element with position: absolute will be positioned with respect to its nearest Non-static ancestor. The positioning of this element does not depend upon its siblings or the elements which are at the same level.</li><br>
+            <li><b>Sticky :- </b>Element with position: sticky and top: 0 played a role between fixed & relative based on the position where it is placed. If the element is placed at the middle of the document then when the user scrolls the document, the sticky element starts scrolling until it touches the top. When it touches the top, it will be fixed at that place in spite of further scrolling. We can stick the element at the bottom, with the bottom property.</li><br>
+        </ol>
+
+        <h2 id="b13"> CSS border Property</h2>
+        <p>The border property in CSS is used to style the border of an element. This property is a combination of three other properties border-width, border-style, and border-color as can be used as a shorthand notation for these three properties. It sets or returns the border-width, border-style, border-color Properties.</p>
+        <pre><b>Syntax:</b> 
+        border = "width style color|initial|inherit"</pre>
+
+        <h3>Property Values: </h3>
+        <ol>
+            <li>width: This value specifies the weight or the width of the border.</li>
+            <li>style: This value specifies a style for the border, that is whether the border will be dotted, dashed, solid etc.</li>
+            <li>color: This value specifies the color of the border.</li>
+        </ol>
+
+        <h2 id="b14">CSS | border-image Property</h2>
+        <p>The border-image property in CSS is used to set the border of an element.        </p>
+        <pre><b>Syntax:</b>
+        border-image: source slice width outset repeat|initial|inherit;</pre>
+        <p><b>Property Values:</b>The border-image property is the combination of many properties which are listed below:</p>
+        <ol>
+            <li>border-image-source</li>
+            <li>border-image-slice</li>
+            <li>border-image-width</li>
+            <li>border-image-outset</li>
+            <li>border-image-repeat</li>
+        </ol>
+
+
+        <h2 id="b15">CSS font-family Property</h2>
+        <p>The font-family property specifies the font of an element. It can have multiple fonts as a backup system i.e. if the browser doesn’t support one font then the other can be used. In other words, this property is used to specifies the family-name &/or generic-family, based on the priority from the list, for the selected element.</p>
+        <p>The font-family can be categorized into 2 types:</p>
+        <ul>
+            <li>family-name: It contains the name of a font-family, such as “times”, “courier”, “arial”, etc.</li>
+            <li>generic-family: It contains name of a generic-family, such as”serif”, “sans-serif”, “cursive”, “fantasy”, “monospace”.</li>
+        </ul>
+        <pre><b>Syntax:</b> 
+        element_selector {
+        font-family: family-name|generic-family|initial|inherit;
+        } </pre>
+        
+
+
+
+        <h2 id="b16">CSS | grid Property</h2>
+        <p>It is a CSS property that offers a grid-based layout system, with rows and columns, making it easier to design web pages without floats and positioning.</p>
+        <img src="images/c2.jpg" width="700" height="300"><br><br><br><br>
+
+        <pre><b>Syntax:</b> 
+            grid: none|grid-template-rows / grid-template-columns|grid-template-areas|
+            grid-template-rows / [grid-auto-flow] grid-auto-columns|[grid-auto-flow] 
+            grid-auto-rows / grid-template-columns|initial|inherit;</pre><br><br>
+
+            <h3><b>Property values:</b></h3>
+
+            <img src="images/c3.jpg" width="800" height="300">
+
+
+        <h2 id="b17">CSS | rgb() Function</h2>
+        <p>The rgb() function is an inbuilt function in CSS which is used to define the colors using the Red Green Blue (RGB) model.</p>
+        <pre>Syntax:
+        rgb( red, green, blue )</pre>
+        <p>Parameters: This function accepts three parameters as mentioned above and described below:        </p>
+        <ul>
+            <li>red: This parameter is used to define the intensity of red color. It is an integer value lies between 0 to 255, or as a percentage value between 0% to 100%.</li>
+            <li>green: This parameter is used to define the intensity of green color. It is an integer value lies between 0 to 255, or as a percentage value between 0% to 100%.</li>
+            <li>blue: This parameter is used to define the intensity of blue color. It is an integer value lies between 0 to 255, or as a percentage value between 0% to 100%.</li>
+        </ul>
+
+        <h2 id="b18">CSS | url() Function</h2>
+        <p>The url() function is an inbuilt function which is used to include a file. The parameter of this function is absolute URL, relative URL or a data URI. The url() function can be used for background-image, border-image, list-style-image, content, cursor, border-image, border-image-source, src as part of a @font-face block, and @counter-style/symbol. </p>
+        <pre>Syntax:
+
+            url( < string> < url-modifier>* )</pre>
+            <p>Parameters: This function accepts single parameter url which holds the url in string format. 
+                The examples of url are:</p>
+                <pre>< css_property>: url("image.png")
+                    < css_property>: url('image.png')
+                    < css_property>: url(image.png)</pre>
+
+        <h2>CSS 2D Transforms</h2>
+        <p>A transformation in CSS is used to modify an element by its shape, size and position. It transforms the elements along the X-axis and Y-axis. There are 6 main types of transformation which are listed below:</p>
+        <ol>
+            <li>translate()</li>
+            <li>rotate()</li>
+            <li>scale()</li>
+            <li>skewX()</li>
+            <li>skewY()</li>
+            <li>matrix()</li>
+        </ol>
+
+        <h2 id="b19">CSS | 3D Transforms</h2>
+        <p>It allows to change elements using 3D transformations. In 3D transformation, the elements are rotated along X-axis, Y-axis and Z-axis.
+            There are three main types of transformation which are listed below:</p>
+
+            <ol>
+                <li><b>rotateX():-</b> This rotation is used to rotate an elements around X-axis at a given degree.</li>
+                <li><b>rotateY():- This method is used to rotate an element around Y-axis at given degrees.</b></li>
+                <li><b>rotateZ():- This method is used to rotate an element around Z-axis at a given degree.</b></li>
+            </ol>
+
+        <h2 id="b20">CSS | Pagination</h2>
+        <p>Pagination is the process of dividing the document into pages and providing them with numbers.
+            Types of Pagination: There are many types of pagination in CSS. Some of them are given below:</p>
+            <ol>
+                <li><b>Simple Pagination</b><pre>Syntax:
+                .pagination {
+                    display:type
+                }
+                .pagination body {
+                    color:colorname
+                    decoration:type
+                }</pre></li><br>
+
+
+                <li><b>Active and Hoverable Pagination</b> In this pagination, by using the active class the current page will be highlighted. Hover will change the color of the page link when the mouse moves over them.
+                <pre>Syntax:
+                .pagination body.active {
+                    display:type
+                    background-color:colorname
+                }
+                .pagination body:hover:not(.active) {
+                    background-color:colorname
+                }</pre></li><br>
+
+
+                <li><b>Rounded Active and Hoverable Buttons</b>For rounded active and hoverable buttons just add border-radius property.
+                <pre>Syntax:
+
+                    .pagination body.active {
+                        display:type
+                        background-color:colorname
+                        border-radius:size
+                    }
+                    .pagination body:hover:not(.active) {
+                        background-color:colorname
+                        border-radius:size
+                    }</pre></li><br>
+
+
+
+                <li><b>Hoverable Transition Effect</b> Transition property is added to create a transition effect on hover.
+                <pre>Syntax:
+
+                    .pagination body:hover {
+                        transition:type
+                    }</pre></li><br>
+
+
+                <li><b>Bordered Pagination</b>In this type of pagination a border is added to the pagination. Use border property to add borders to the pagination.
+                <pre>Syntax:
+                    .pagination body {
+                        border:type
+                    }</pre></li><br>
+
+
+                <li><b>Rounded Border Pagination</b> Border can be rounded using border-radius property.
+                <pre>Syntax:
+                    .pagination body {
+                        border:type
+                        border-radius:size
+                    }</pre></li><br>
+
+                <li><b>Centered Pagination</b>Pagination can be centered by using text-align property.
+                <pre>Syntax:
+                    .center {
+                        text-align:center
+                    }
+                    .pagination body {
+                        color:colorname
+                    }</pre></li><br>
+
+
+                <li><b>Space between Pagination</b>Page links can be spaced if you do not want to group them. Use margin property to provide space between the links.
+                <pre>Syntax:
+                    .pagination body {
+                        color:colorname
+                        margin:type
+                    }</pre></li><br>
+
+
+
+                <li><b>Pagination Size</b>The size of the pagination can be changed using font-size property.
+                <pre>Syntax:
+                    .pagination body {
+                        color:colorname
+                        font-size:size
+                    }</pre></li><br>
+            </ol>
+
+            <h2>CSS | Shadow Effect</h2>
+            <p>The shadow effect property in CSS is used to add text and images shadow in HTML document.
+                Text Shadow: The CSS text-shadow property is used to display the text with shadow. This property holds the pixel length, breadth, and width of the shadow and the color of the shadow.</p>
+            <pre>Syntax:
+            Text-shadow: 3px 3px 3px green;</pre>
+
+
+            <h2 id="b21">CSS Animations</h2>
+            <p>CSS Animation: CSS Animations is a technique to change the appearance and behavior of various elements in web pages. It is used to control the elements by changing their motions or display. It has two parts, one which contains the CSS properties which describe the animation of the elements and the other contains certain keyframes which indicate the animation properties of the element and the specific time intervals at which those have to occur.</p>
+            
+
+            <h2>CSS Buttons</h2>
+            <p>The CSS Buttons are used to decorate the web pages by applying the various styling properties to the button. Buttons are used for event processing and interacting with the user. From submitting a form to getting to view some information, we have to click on buttons. Button tag is used to create buttons in HTML. </p>
+            <pre>< !DOCTYPE html>
+                < html>
+                
+                < head>
+                    < title> button tag < /title>
+                < /head>
+                
+                < body>
+                    < h2>button tag< /h2>
+                    < button>Button< /button>
+                < /body>
+                
+                < /html>
+                </pre>
+
+                <u><h3>output</h3></u>
+                <img src="images/c4.jpg" width="200" height="100">
+            
+
+        
+        </div>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll',function(){
+                var scroll = document.querySelector('.scrollTop');
+                scroll.classList.toggle("active" ,window.scrollY > 500)
+            })
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,68 @@
+
+.souvik{
+    position: relative;
+    padding: 150px 250px ;
+
+}
+
+
+
+
+
+.banner h1{
+    font-size: 60px;
+    padding-top: 5%;
+    text-align: center;
+    font-weight: 1000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+
+.asd h3{
+    text-decoration: underline;
+    color: red;
+}
+.souvik h2
+{
+    color: rgb(53, 243, 6);
+    font-weight: 1000;
+    line-height: 22px;
+    font-size: 35px;
+    padding: 10px;
+    position: relative;
+}
+
+.qw
+{
+    text-orientation: sideways-right;
+    text-indent: 20px;
+}
+
+
+
+
+.scrollTop
+{
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: url(images/scroll.jpg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop.active
+{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}

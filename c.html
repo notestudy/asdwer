@@ -1,0 +1,774 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="allnotecss.css">
+        <style>
+            table, th, td 
+            {
+              border: 2px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <a href="#name"><div class="scrollTop"></div></a>
+        <div align="center">
+            <h2 id="name"></h2>
+            <h1><u>OVERVIEW OF C PROGRAMMING</u></h1>
+       
+        <table width="400">
+            <tr><th><h2>Table of Content</h2>
+        <h2 id="_top of the page_"></h2>
+        <br><a href="#INTRODUCTION:">Go to INTRODUCTION</a></br>
+
+        <br><a href="#Header Files">Go to Header Files</a></br>
+
+        <br><a href="#C  Variables">Go to C  Variables</a></br>
+
+        <br><a href="#C Basic Syntax">Go to C Basic Syntax</a></br>
+
+        <br><a href="#C Storage Classes">Go to C Storage Classes</a></br>
+
+        <br><a href="#C Operators">Go to C Operators</a></br>
+
+        <br><a href="#Decision Making in C">Go to Decision Making in C</a></br>
+
+        <br><a href="#C Loops">Go to C Loops</a></br>
+
+        <br><a href="#C Functions">Go to C Functions</a></br>
+
+        <br><a href="#C  Scope Rules">Go to C  Scope Rules</a></br>
+
+        <br><a href="#C ArraysC Pointers">Go to C ArraysC Pointers</a></br>
+
+        <br><a href="#C Strings">Go to C Strings</a></br>
+
+        <br><a href="#C Structures">Go to C Structures</a></br>
+    </th></tr>
+</table><br><br><br>
+</div>
+
+        <h2 id="INTRODUCTION:"></h2>
+        <div align="center">
+            <h1><em>INTRODUCTION:</em></h1>
+        </div>
+        <P><b>C</b> is a general-purpose computer programming language. It was evolued by Dennis Ritehic at the bell laboratorics in 1972. C was conceps ard added the concets of datatypes there are various types of datatypes and other powerfull features.</P>
+
+           <p> The<b> UNIX</b> operating system, the C compiler, and essentially all UNIX applications programs have been written in C. The C has now become a widely used professional language for various reasons.</p>
+
+
+           <p><b>.</b>  Easy to learn</p>
+           <p><b>.</b>  Structured language</p>
+           <p><b>.</b>  It produces efficient programs.</p>
+           <p><b>.</b>  It can handle low-level activities.</p>
+           <p><b>.</b>  It can be compiled on a variety of computer platforms.</P>
+            
+    <h2><b>Why use to C?</b></h2>
+    <p>C was initially used for system development work, in particular the programs that make up the operating system. C was adopted as a system development language because it produces code that runs nearly as fast as code written in assembly language. Some examples of the use of C might be:</p>
+    <p><b>.</b> Operating Systems</p>
+    <p><b>.</b> Language Compilers</p>
+    <p><b>.</b> Assemblers</p>
+    <p><b>.</b> Text Editors</p>
+    <p><b>.</b> Print Spoolers</p>
+    <p><b>.</b> Network Drivers</p>
+    <p><b>.</b> Modern Programs</p>
+    <p><b>.</b> Databases</p>
+    <p><b>.</b> Language Interpreters</p>
+    <p><b>.</b> Utilities</p>
+
+    <h3>Inportend of C:</h3>
+    <p><b>1.</b> The increasing popularity of C is probably due to in very desinale qualities.It is a Robust language whose reach set of built in function and Operators can be use to write any complex program.</p>
+    <p><b>2.</b> progream written in C and efficent and fast, this is due to varity of data types and powerful operators.</p>
+    <p><b>3.</b> C is highly portable.This means that C program written from one computer can be run for another with little or on modification.</p>
+    <p><b>4.</b> C language is well suited for stuctured programming.</p>
+    <p><b>5.</b> C language has its ability to extand itself.</p>
+        <h3><li> Main function:</li></h3>
+        <p>  The main<b>()</b> is a special function used by<b>()</b> to tell the program where the program stands.Every program must have only one main function.If we use more then one the compiler can't understant which one make the begining of the program.</p>
+        <h3><li> variable declaration:</li></h3>
+        <p>This section declares some variable that are used in more then one funtion.This variable are known as global variable.This section must be declared outside of all the function.</p>
+        <h3><li> Body:</li></h3>
+        <p>The statment elclosed with in the body of the funtion are called body of the funtion.</p>
+        <h3><li> printf Function:</li></h3>
+        <p>It is used for output.it prints the given statement to the cousole.</p>
+        <p><dd> The syntax of printf funtion is-</dd></p>
+        <p><dd> printf("statement"); </dd></p>
+        <h3><li> scanf Function:</li></h3>
+        <p>It is used for input. It read the input data frous the cousole.</p>
+        <p><dd> The syntax of scanf funtion is-</dd></p>
+        <p><dd> scanf("%d",&variable)</dd></p>
+        <h3><li> Format string:</li></h3>
+        <p>The formal string can be:</p>
+        <p><b>1.</b> %d-> integer(1,2,3,4.....,)</p>
+        <p><b>2.</b> %c-> character(A,B,C,D)</p>
+        <p><b>3.</b> %s-> string(world,read)</p>
+        <p><b>4.</b> %f-> float(27.7,38.9,87.6)</p>
+        <h2 id="Header Files"></h2>
+        <div align="center">
+            <h1><em>Header Files</em></h1>
+        </div>
+        <p>A header file is a file with extension <b>.h</b> which contains C function declarations and macro definitions and to be shared between several source files. There are two types of header files: the files that the programmer writes and the files that come with your compiler.</p>
+        <p>You request the use of a header file in your program by including it, with the C preprocessing directive <b>#include</b> like you have seen inclusion of <b>stdio.h</b> header file. which comes along with your compiler.</p>
+        <p>header file is a file with extension .h which contains C function declarations and macro definitions and to be shared between several source files. There are two types of header files: the files that the programmer writes and the files that come with your compiler.</p>
+        <p>You request the use of a header file in your program by including it, with the C preprocessing directive #include like you have seen inclusion of stdio.h header file. which comes along with your compiler.</p>
+        <h3>Include Syntax</h3>
+        <p>Both user and system header files are included using the preprocessing directive #include. It has following two forms:</p>
+        <img src="images/h1.png">
+        <p>This form is used for system header files. It searches for a file named file in a standard list of system directories. You can prepend directories to this list with the -I option while compiling your source code.</p>
+        <img src="images/h2.png">
+        <p>This form is used for header files of your own program. It searches for a file named file in the directory containing the current file. You can prepend directories to this list with the -I option while compiling your source code.</p>
+        <h3>Include Operation</h3>
+        <p>The <b>#include</b> directive works by directing the <b>C preprocessor</b> to scan the specified file as input before continuing with the rest of the current source file. The output from the preprocessor contains the output already generated, followed by the output resulting from the included file, followed by the output that comes from the text after the <b>#include</b> directive. For example, if you have a header file header.h as follows:</p>
+        <p>char *test (void);</p>
+        <p>and a main program called program.c that uses the header file, like this:</p>
+        <p>int x;</p>
+        <p>#include "header.h"</p>
+        <p>int main (void)</p>
+        <p>{</p>
+        <p>puts (test ());</p>
+        <p>}</p>
+        <p>the compiler will see the same token stream as it would if program.c read</p>
+        <p>int x;</p>
+        <p>char *test (void);</p>
+        <p>int main (void)</p>
+        {<p></p>
+        <p>puts (test ());</p>
+        <p>}</p>
+        <h3>Once-Only Headers</h3>
+        <p>If a header file happens to be included twice, the compiler will process its contents twice and will result an error. The standard way to prevent this is to enclose the entire real contents of the file in a conditional, like this:</p>
+        <p>#ifndef HEADER_FILE</p>
+        <p>#define HEADER_FILE</p>
+        <p>the entire header file file</p>
+        <p>#endif</p>
+        <b>This construct is commonly known as a wrapper <b>#ifndef</b>. When the header is included again, the conditional will be false, because HEADER_FILE is defined. The preprocessor will skip over the entire contents of the file, and the compiler will not see it twice.</p>
+        <h3>Computed Includes</h3>
+        <p>Sometimes it is necessary to select one of several different header files to be included into your program. They might specify configuration parameters to be used on different sorts of operating systems, for instance. You could do this with a series of conditionals as follows:</h3>
+        <p>#if SYSTEM_1</p>
+        <p># include "system_1.h"</p>
+        <p>#elif SYSTEM_2</p>
+        <p># include "system_2.h"</p>
+        <p>#elif SYSTEM_3</p>
+        <p>...</p>
+        <p>#endif</p>
+        <p>But as it grows, it becomes tedious, instead the preprocessor offers the ability to use a macro for the header name. This is called a computed include. Instead of writing a header name as the direct argument of #include, you simply put a macro name there instead:</p>
+        <p>#define SYSTEM_H "system_1.h"</p>
+        <p>.....</p>
+        <p>#include SYSTEM_H</p>
+        <p>SYSTEM_H will be expanded, and the preprocessor will look for system_1.h as if the #include had been written that way originally. SYSTEM_H could be defined by your Makefile with a -D option.</p>
+        
+        <h2 id="C  Variables:"></h2>
+        <div align="center">
+            <h1><em>C  Variables:</em></h1>
+        </div>
+        <p>A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.</p>
+        <p>The name of a variable can be composed of letters, digits, and the underscore character.It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive. Based on the basic types explained in previous chapter, there will be the following basic variable types:</p>
+        <img src="images/123.png">
+            <p>C programming language also allows to define various other types of variables, which we will cover in subsequent chapters like Enumeration, Pointer, Array, Structure, Union etc. For this chapter, let us study only basic variable types.</p>
+            <h3>Variable Definition in C:</h3>
+            <p>A variable definition means to tell the compiler where and how much to create the storage for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows:</p>
+            <p>Here, type must be a valid C data type including char, w_char, int, float, double, bool or any user-defined object, etc., and variable_list may consist of one or more identifier names separated by commas. Some valid declarations are shown here:</p>
+            <img src="images/654.png">
+            <p>The line int i, j, k; both declares and defines the variables i, j and k; which instructs the compiler to create variables named i, j and k of type int.</p>
+            <p>Variables can be initialized (assigned an initial value) in their declaration. The initializer consists of an equal sign followed by a constant expression as follows:</p>
+            <img src="images/456.png">
+            <p>Some examples are:</p>
+            <img src="images/369.png">
+            <h2>Variable Declaration in C:</h2>
+            <p>A variable declaration provides assurance to the compiler that there is one variable existing with the given type and name so that compiler proceed for further compilation without needing complete detail about the variable. A variable declaration has its meaning at the time of compilation only, compiler needs actual variable declaration at the time of linking of the program.</p>
+            <p>A variable declaration is useful when you are using multiple files and you define your variable in one of the files, which will be available at the time of linking of the program. You will use extern keyword to declare a variable at any place. Though you can declare a variable multiple times in your C program but it can be defined only once in a file, a function or a block of code.</p>
+            <h4>Example-</h4>
+            <p>Try the following example, where variables have been declared at the top, but they have been defined and initialized inside the main function:</p>
+            <img src="images/ex1.png">
+            <br><img src="images/ex2.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/ans.png">
+            <p>Same concept applies on function declaration where you provide a function name at the time of its declaration and its actual definition can be given anywhere else. For example:</p>
+            <img src="images/ex3.png">
+
+            <h2 id="C Basic Syntax"></h2>
+            <div align="center">
+                <h1><em>C Basic Syntax</em></h1>
+            </div>
+            <p>You have seen a basic structure of C program, so it will be easy to understand other basic building blocks of the C programming language.</p>
+            <h3>Tokens in C</h3>
+            <p>A C program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following C statement consists of five tokens:</p>
+            <img src="images/prin.png">
+            <h3>Semicolons ;</h3>
+            <p>In C program, the semicolon is a statement terminator. That is, each individual statement must be ended with a semicolon. It indicates the end of one logical entity.</p>
+            <p>For example, following are two different statements:</p>
+            <img src="images/prin2.png">
+            <h3>Comments</h3>
+            <p>Comments are like helping text in your C program and they are ignored by the compiler. They start with /* and terminates with the characters */ as shown below:</p>
+            <img src="images/commend.png">
+            <h3>Identifiers</h3>
+            <P>A C identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9).</P>
+            <p>C does not allow punctuation characters such as @, $, and % within identifiers. C is a case sensitive programming language. Thus, Manpower and manpower are two different identifiers in C.</p>
+            <h3>Keywords</h3>
+            <p>The following list shows the reserved words in C. These reserved words may not be used as constant or variable or any other identifier names.</p>
+            <img src="images/keyw.png">
+
+            <h2 id="C Storage Classes"></h2>
+            <div align="center">
+                <h1><em>C Storage Classes</em></h1>
+            </div>
+            <p>A storage class defines the scope (visibility) and life-time of variables and/or functions within a C Program. These specifiers precede the type that they modify. There are the following storage classes, which can be used in a C Program</p>
+            <p><li>auto</li></p>
+            <p><li>register</li></p>
+            <p><li>static</li></p>
+            <p><li>extern</li></p>
+            <h3>The auto Storage Class</h3>
+            <p>The auto storage class is the default storage class for all local variables.</p>
+            <p>{</p>
+            <p>int mount;</p>
+            <p>auto int month;</p>
+            <p>}</p>
+            <p>The example above defines two variables with the same storage class, auto can only be used within functions, i.e., local variables.</p>
+            <h3>The register Storage Class</h3>
+            <p>The register storage class is used to define local variables that should be stored in a register instead of RAM. This means that the variable has a maximum size equal to the register size (usually one word) and can't have the unary '&' operator applied to it (as it does not have a memory location).</p>
+            <p>{</p>
+            <p>register int miles;</p>
+            <p>}</p>
+            <p>The register should only be used for variables that require quick access such as counters. It should also be noted that defining 'register' does not mean that the variable will be stored in a register. It means that it MIGHT be stored in a register depending on hardware and implementation restrictions.</p>
+            <h3>The static Storage Class</h3>
+            <p>The static storage class instructs the compiler to keep a local variable in existence during the life-time of the program instead of creating and destroying it each time it comes into and goes out of scope. Therefore, making local variables static allows them to maintain their values between function calls.</p>
+            <p>The static modifier may also be applied to global variables. When this is done, it causes that variable's scope to be restricted to the file in which it is declared.</p>
+            <p>In C programming, when static is used on a class data member, it causes only one copy of that member to be shared by all objects of its class.</p>
+            <img src="images/dmo.png">
+            <p>You may not understand this example at this time because I have used function and global variables, which I have not explained so far. So for now, let us proceed even if you do not understand it completely. When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/dmo2.png">
+
+            <h2 id="C Operators"></h2>
+            <div align="center">
+                <h1><em>C Operators</em></h1>
+            </div>
+            <p>An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. C language is rich in built-in operators and provides the following types of operators:</p>
+            <p><li>Arithmetic Operators</li></p>
+            <p><li>Relational Operators</li></p>
+            <p><li>Logical Operators</li></p>
+            <p><li>Bitwise Operators</li></p>
+            <p><li>Assignment Operators</li></p>
+            <p><li>Misc Operators</li></p>
+            <p>This tutorial will explain the arithmetic, relational, logical, bitwise, assignment and other operators one by one.</p>
+            <h3>Arithmetic Operators</h3>
+            <p>Following table shows all the arithmetic operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p>
+            <img src="images/op1.png">
+            <br><img src="images/op2.png"></br>
+            <p>Try the following example to understand all the arithmetic operators available in C programming language:</p>
+            <img src="images/op3.png">
+            <p>When you compile and execute the above program, it produces the following result:</p>
+            <img src="images/op4.png">
+            <h3>Relational Operators</h3>
+            <p>Following table shows all the relational operators supported by C language. Assume variable A holds 10 and variable B holds 20, then:</p>
+            <img src="images/op5.png">
+            <br><img src="images/op6.png"></br>
+            <p>Try the following example to understand all the relational operators available in C programming language:</p>
+            <img src="images/op7.png">
+            <br><img src="images/op8.png"></br>
+            <p>When you compile and execute the above program, it produces the following result:</p>
+            <img src="images/op9.png">
+            <h3>Logical Operators</h3>
+            <p>Following table shows all the logical operators supported by C language. Assume variable A holds 1 and variable B holds 0, then:</p>
+            <img src="images/op10.png">
+            <p>Try the following example to understand all the logical operators available in C programming language:</p>
+            <img src="images/op11.png">
+            <br><img src="images/op12.png"></br>
+            <p>When you compile and execute the above program, it produces the following result:</p>
+            <img src="images/op12.png">
+            <h3>Bitwise Operators</h3>
+            <p>Bitwise operator works on bits and performs bit-by-bit operation. The truth tables for &, |, and ^ are as follows:</p>
+            <img src="images/op13.png">
+            <p>Assume if A = 60; and B = 13; now in binary format they will be as follows:</p>
+            <p>A = 0011 1100</p>
+            <p>B = 0000 1101</p>
+            <p>-----------------</p>
+            <p>A&B = 0000 1100</p>
+            <p>A|B = 0011 1101</p>
+            <p>A^B = 0011 0001</p>
+            <p>~A = 1100 0011</p>
+            <p>The Bitwise operators supported by C language are listed in the following table. Assume variable A holds 60 and variable B holds 13, then:</p>
+            <img src="images/op15.png">
+            <p>Try the following example to understand all the bitwise operators available in C programming language:</p>
+            <img src="images/op16.png">
+            <br><img src="images/op17.png"></br>
+            <p>When you compile and execute the above program, it produces the following result:</p>
+            <img src="images/op18.png">
+            <h3>Assignment Operators</h3>
+            <p>There are following assignment operators supported by C language:</p>
+            <img src="images/op19.png">
+            <p>Try the following example to understand all the assignment operators available in C programming language:</p>
+            <img src="images/op20.png">
+            <p>When you compile and execute the above program, it produces the following result:</p>
+            <img src="images/op21.png">
+            <br><img src="images/op22.png"></br>
+            <h3>Misc Operators ↦ sizeof & ternary</h3>
+            <p>There are few other important operators including sizeof and ? : supported by C Language.</p>
+            <img src="images/op23.png">
+            <h3>Operators Precedence in C</h3>
+            <p>Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.</p>
+            <p>For example, x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3*2 and then adds into 7.</p>
+            <p>Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</p>
+            <img src="images/op24.png">
+            <br><img src="images/op25.png"></br>
+            <p>Try the following example to understand the operator precedence available in C programming language:</p>
+            <img src="images/op26.png">
+            <p>When you compile and execute the above program, it produces the following result:</p>
+            <img src="images/op27.png">
+
+            <h2 id="Decision Making in C"></h2>
+            <div align="center">
+                <h1><em>Decision Making in C</em></h1>
+            </div>
+            <p>Decision making structures require that the programmer specify one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.</p>
+            <p>Following is the general form of a typical decision making structure found in most of the programming languages:</p>
+            <img src="images/if.png">
+            <p>C programming language assumes any non-zero and non-null values as true, and if it is either zero or null, then it is assumed as false value. C programming language provides following types of decision making statements.</p>
+            <h3>if statement</h3>
+            <p>An<b>if</b> statement consists of a boolean expression followed by one or more statements.</p>
+            <h4>Syntax</h4>
+            <p>The syntax of an if statement in C programming language is:</p>
+            <P>if(boolean_expression)</P>
+            <P>{</P>
+            <P>/* statement(s) will execute if the boolean expression is true */</P>
+            <P>}</P>
+            <p>If the <b>boolean </b>expression evaluates to<b> true</b>, then the block of code inside the <b>if</b>statement will be executed. If<b> boolean</b> expression evaluates to <b>false</b>, then the first set of code after the end of the <b>if</b> statement (after the closing curly brace) will be executed.</p>
+            <p>C programming language assumes any <b>non-zero</b> and <b>non-null</b> values as <b>true</b> and if it is either <b>zero</b> or <b>null</b> then it is assumed as <b>false</b> value.</p>
+            <img src="images/if1.png">
+            <h4>Example</h4>
+            <img src="images/if2.png">
+            <br><img src="images/if3.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/if4.png">
+            <h3>if...else statement</h3>
+            <p>An <b>if</b> statement can be followed by an optional <b>else</b> statement, which executes when the boolean expression is <b>false</b>.</p>
+            <h4>Syntax</h4>
+            <p>The syntax of an <b>if...else</b> statement in C programming language is:</p>
+            <p>if(boolean_expression)</p>
+            <p>{</p>
+            <p>/* statement(s) will execute if the boolean expression is true */</p>
+            <p>}</p>
+            <p>else</p>
+            <p>{</p>
+            <p> /* statement(s) will execute if the boolean expression is false */</p>
+            <p>}</p>
+            <p>If the <b>boolean</b> expression evaluates to <b>true</b>, then the if block of code will be executed,otherwise <b>else</b> block of code will be executed.</p>
+            <p>C programming language assumes any <b>non-zero</b> and <b>non-null</b> values as <b>true</b> and if it is either zero or <b>null</b> then it is assumed as <b>false</b> value.</p>
+            <img src="images/if5.png">
+            <h4>Example</h4>
+            <img src="images/if6.png">
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/if7.png">
+            <h3>The if...else if...else Statement</h3>
+            <p>An if statement can be followed by an optional else if...else statement, which is very useful to test various conditions using single if...else if statement.</p>
+            <p>When using if , else if , else statements there are few points to keep in mind:</p>
+            <p><li>An if can have zero or one else's and it must come after any else if's.</li></p>
+            <p><li>An if can have zero to many else if's and they must come before the else.</li></p>
+            <p><li>Once an else if succeeds, none of the remaining else if's or else's will be tested.</li></p>
+            <h4>Example</h4>
+            <img src="images/if8.png">
+            <br><img src="images/if9.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/if10.png">
+            <h4>Nested if statements</h4>
+            <p>It is always legal in C programming to nest <b>if-else statements</b>, which means you can use one <b>if</b> or <b>else if</b> statement inside another <b>if</b> or <b>else if</b> statement(s).</p>
+            <h4>Syntax</h4>
+            <p>The syntax for a nested if statement is as follows:</p>
+            <p>if( boolean_expression 1)</p>
+            <p>{</p>
+            <p>/* Executes when the boolean expression 1 is true */</p>
+            <p>if(boolean_expression 2)</p>
+            <p>{</p>
+            <p>/* Executes when the boolean expression 2 is true */</p>
+            <p>}</p>
+            <p>}</p>
+            <p>You can nest else if...else in the similar way as you have nested if statement.</p>
+            <h4>Example</h4>
+            <img src="images/if else.png">
+            <br><img src="images/if else2.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/if else3.png">
+            <h3>switch statement</h3>
+            <p>A <b>switch</b> statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each switch case.</p>
+            <h4>Syntax</h4>
+            <p>The syntax for a switch statement in C programming language is as follows:</p>
+            <p>switch(expression){</p>
+            <p>case constant-expression :</p>
+            <p>statement(s);</p>
+            <p>break; /* optional */</p>
+            <p>case constant-expression :</p>
+            <p>statement(s);</p>
+            <p>break; /* optional */</p>
+            <p>  </p> 
+            <p>/* you can have any number of case statements */</p>
+            <p>default : /* Optional */</p>
+            <p>statement(s);</p>
+            <p>}</p>
+            <p>The following rules apply to a switch statement:</p>
+            <P><li> The <b>expression</b> used in a <b>switch</b> statement must have an integral or enumerated type, or be of a class type in which the class has a single conversion function to an integral or enumerated type</li></P>
+            <p><li> You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon.</li></p>
+            <p><li> The <b>constant-expression</b> for a case must be the same data type as the variable in the switch, and it must be a constant or a literal.</li></p>
+            <p><li> When the variable being switched on is equal to a case, the statements following that case will execute until a <b>break</b> statement is reached.</li></p>
+            <p><li> When a <b>break</b> statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.</li></p>
+            <p><li> Not every case needs to contain a <b>break</b>. If no <b>break</b> appears, the flow of control will fall through to subsequent cases until a break is reached.</li></p>
+            <p><li> A <b>switch</b> statement can have an optional <b>default</b> case, which must appear at the end of the switch. The default case can be used for performing a task when none of the cases is true. No <b>break</b> is needed in the default case.</li></p>
+            <img src="images/co.png">
+            <h4>Example</h4>
+            <img src="images/co2.png">
+            <br><img src="images/co3.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/co4.png">
+            <h3>Nested switch statements</h3>
+            <p>It is possible to have a <b>switch</b> as part of the statement sequence of an <b>outer</b> switch. Even if the case constants of the inner and outer switch contain common values, no conflicts will arise.</p>
+            <h4>Syntax</h4>
+            <p>The syntax for a nested switch statement is as follows:</p>
+            <p>switch(ch1) {</p>
+            <p>case 'A':</p>
+            <p>printf("This A is part of outer switch" );</p>
+            <p>switch(ch2) {</p>
+            <p>case 'A':</p>
+            <p>printf("This A is part of inner switch" );</p>
+            <p>break;</p>
+            <p>case 'B': /* case code */</p>
+            <p>}</p>
+            <p>break;</p>
+            <p>case 'B': /* case code */</p>
+            <p>}</p>
+
+            <h2 id="C Loops"></h2>
+            <div align="center">
+                <h1><em>C Loops </em></h1>
+            </div>
+            <p>There may be a situation, when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.</p>
+            <p>A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages</p>
+            <img src="images/loop.png">
+            <p>C programming language provides the following types of loops to handle looping requirements.</p>
+            <h3>while loop in C</h3>
+            <p>A <b>while</b> loop statement in C programming language repeatedly executes a target statement as long as a given condition is <b>true</b>.</p>
+            <h4>Syntax</h4>
+            <p>The syntax of a while loop in C programming language is:</p>
+            <p>while(condition)</p>
+            <p>{</p>
+            <p>statement(s);</p>
+            <p>}</p>
+            <p>Here, statement(s) may be a single statement or a block of statements. The <b>condition</b> may be any expression, and <b>true</b> is any <b>nonzero</b> value. The loop iterates while the condition is <b>true</b>.</p>
+            <p>When the condition becomes <p>false</p>, program control passes to the line immediately following the loop.</p>
+            <img src="images/loop1.png">
+            <p>Here, key point of the while loop is that the loop might not ever run. When the condition is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed.</p>
+            <h4>Example</h4>
+            <img src="images/loop2.png">
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/loop3.png">
+            <h3>for loop in C</h3>
+            <p>A <b>for</b> loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.</p>
+            <h4>Syntax</h4>
+            <p>The syntax of a for loop in C programming language is:</p>
+            <dd><p>for ( init; condition; increment )</p>
+            <p>{</p>
+            <p>statement(s);</p>
+            <p>}</p></dd>
+            <p><u>Here is the flow of control in a for loop:</u></p>
+            <p>1. The <b>init</b> step is executed first, and only once. This step allows you to declare and initialize any loop control variables. You are not required to put a statement here, as long as a semicolon appears.</p>
+            <p>2. Next, the <b>condition</b> is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and flow of control jumps to the next statement just after the for loop.</p>
+            <p>3. After the body of the for loop executes, the flow of control jumps back up to the <b>increment</b> statement. This statement allows you to update any loop control variables. This statement can be left blank, as long as a semicolon appears after the condition.</p>
+            <p>4. The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop, then increment step, and then again condition). After the condition becomes false, the for loop terminates.</p>
+            <h3>Flow Diagram</h3>
+            <img src="images/loop4.png">
+            <h4>Example</h4>
+            <img src="images/loop5.png">
+            <br><img src="images/loop6.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/loop7.png">
+            <h3>do...while loop in C</h3>
+            <p>Unlike for and while loops, which test the loop condition at the top of the loop, the <b>do...while</b> loop in C programming language checks its condition at the bottom of the loop.</p>
+            <p>A <b>do...while</b> loop is similar to a while loop, except that a <b>do...while</b> loop is guaranteed to execute at least one time.</p>
+            <h4>Syntax</h4>
+            </p>The syntax of a do...while loop in C programming language is:</p>
+            <p>do</p>
+            <p>{</p>
+            <p>statement(s);</p>
+            <p>}while( condition );</p>
+            <p>Notice that the conditional expression appears at the end of the loop, so the statement(s) in the loop execute once before the condition is tested.</p>
+            <p>If the condition is <b>true</b>, the flow of control jumps back up to do, and the statement(s) in the loop execute again. This process repeats until the given condition becomes <p>false</p>.</p>
+            <img src="images/loop8.png">
+            <h4>Example</h4>
+            <img src="images/loop9.png">
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/loop10.png">
+            <br><img src="images/loop11.png"></br>
+
+            <h2 id="C Functions"></h2>
+            <div align="center">
+                <h1><em>C Functions</em></h1>
+            </div>
+            <p>Function is a group of statements that together perform a task. Every C program has at least one function, which is main(), and all the most trivial programs can define additional functions.</p>
+            <p>A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.</p>
+            <p>The C standard library provides numerous built-in functions that your program can call. For example, function strcat() to concatenate two strings, function memcpy() to copy one memory location to another location and many more functions.</p>
+            <p>A function is known with various names like a method or a sub-routine or a procedure, etc.</p>
+            <h3>Defining a Function</h3>
+            <p>The general form of a function definition in C programming language is as follows:</p>
+            <p>return_type function_name( parameter list )</p>
+            <p>{</p>
+            <p>body of the function</p>
+            <p>}</p>
+            <p>A function definition in C programming language consists of a function header and a function body. Here are all the parts of a function:</p>
+            <p><li><b>Return Type:</b> A function may return a value. The <p>return_type</p> is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword <b>void</b>.</li></p>
+            <p><b>Function Name:</b> This is the actual name of the function. The function name and the parameter list together constitute the function signature.</p>
+            <p><b>Parameters:</b> A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.</p>
+            <p><b>Function Body:</b> The function body contains a collection of statements that define what the function does.</p>
+            <h4>Example</h4>
+            <p>Following is the source code for a function called max(). This function takes two parameters num1 and num2 and returns the maximum between the two:</p>
+            <img src="images/fu.png">
+            <h3>Function Declarations</h3>
+            <p>A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.</p>
+            <p>A function declaration has the following parts:</p>
+            <p>return_type function_name( parameter list );</p>
+            <p>For the above defined function max(), following is the function declaration:</p>
+            <p>int max(int num1, int num2);</p>
+            <p>Function declaration is required when you define a function in one source file and you call that function in another file. In such case you should declare the function at the top of the file calling the function.</p>
+            <h3>Calling a Function</h3>
+            <p>When a program calls a function, program control is transferred to the called function. A called function performs defined task, and when its return statement is executed or when its function-ending closing brace is reached, it returns program control back to the main program.</p>
+            <p>To call a function, you simply need to pass the required parameters along with function name, and if function returns a value, then you can store returned value. For example:</p>
+            <img src="images/fu1.png">
+            <p>I kept max() function along with main() function and compiled the source code. While running final executable, it would produce the following result:</p>
+            <img src="images/fu2.png">
+            <h3>Function Arguments</h3>
+            <p>If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.</p>
+            <p>The formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit.</p>
+            <p>While calling a function, there are <b>two ways</b> that arguments can be passed to a function:</p>
+            <h3>Function call by value</h3>
+            <p>The <b>call by value</b> method of passing arguments to a function copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.</p>
+            <p>By default, C programming language uses call by value method to pass arguments. In general, this means that code within a function cannot alter the arguments used to call the function. Consider the function swap() definition as follows.</p>
+            <img src="images/fu3.png">
+            <p>Now, let us call the function swap() by passing actual values as in the following example:</p>
+            <img src="images/fu4.png">
+            <p>Let us put above code in a single C file, compile and execute it, it will produce the following result:</p>
+            <img src="images/fu5.png">
+            <br><img src="images/fu6.png"></br>
+            <p>Which shows that there is no change in the values though they had been changed inside the function.</p>
+            <h3>Function call by reference</h3>
+            <p>The <b>call by reference</b> method of passing arguments to a function copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the passed argument.</p>
+            <p>To pass the value by reference, argument pointers are passed to the functions just like any other value. So accordingly you need to declare the function parameters as pointer types as in the following function swap(), which exchanges the values of the two integer variables pointed to by its arguments.</p>
+            <img src="images/fu7.png">
+            <p>Let us call the function swap() by passing values by reference as in the following example:</p>
+            <img src="images/fu8.png">
+            <br><img src="images/fu9.png"></br>
+            <p>Let us put above code in a single C file, compile and execute it, it will produce the following result:</p>
+            <img src="images/fu10.png">
+            <p>Which shows that there is no change in the values though they had been changed inside the function</p>
+
+            <h2 id="C  Scope Rules"></h2>
+            <div align="center">
+                <h1><em>C  Scope Rules</em></h1>
+            </div>
+            <P>A scope in any programming is a region of the program where a defined variable can have its existence and beyond that variable cannot be accessed. There are three places where variables can be declared in C programming language:</P>
+            <P><li>Inside a function or a block which is called local variables,</li></P>
+            <p><li>Outside of all functions which is called global variables.</li></p>
+            <p><li>In the definition of function parameters which is called formal parameters.</li></p>
+            <p>Let us explain what are local and global variables and formal parameters.</p>
+            <h3>Local Variables</h3>
+            <p>Variables that are declared inside a function or block are called <b>local variables</b>. They can be used only by statements that are inside that function or block of code. Local variables are not known to functions outside their own. Following is the example using <b>local variables</b>. Here all the variables a, b and c are local to <b>main()</b> function.</p>
+            <img src="images/v1.png">
+            <h3>Global Variables</h3>
+            <p><b>Global variables</b> are defined outside of a function, usually on top of the program. The global variables will hold their value throughout the lifetime of your program and they can be accessed inside any of the functions defined for the program.</p>
+            <P>A <b>global variable</b> can be accessed by any function. That is, a <b>global</b> variable is available for use throughout your entire program after its declaration. Following is the example using global and local variables:</P>
+            <img src="images/v2.png">
+            <p>A program can have same name for local and global variables but value of local variable inside a function will take preference. Following is an example:</p>
+            <img src="images/v3.png">
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/v4.png">
+            <h3>Formal Parameters</h3>
+            <p>Function parameters, so called formal parameters, are treated as local variables within that function and they will take preference over the global variables. Following is an example:</p>
+            <img src="images/v5.png">
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/v6.png">
+
+            <h2 id="C Arrays"></h2>
+            <div align="center">
+                <h1><em>C Arrays</em></h1>
+            </div>
+            <p>C programming language provides a data structure called the <b>array</b>, which can store a fixed-size sequential collection of elements of the same type. An <b>array</b> is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
+            <p>Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an <b>index.</b></p>
+            <p>All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.</p>
+            <img src="images/arr.png">
+            <p>Declaring Arrays</p>
+            <p>To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows:</p>
+            <p>type arrayName [ arraySize ];</p>
+            <P>This is called a single-dimensional array. The arraySize must be an integer constant greater than zero and type can be any valid C data type. For example, to declare a 10-element array called balance of type double, use this statement:</P>
+            <p>double balance[10];</p>
+            <p>Now balance is a variable array which is sufficient to hold up-to 10 double numbers.</p>
+            <h3>Initializing Arrays</h3>
+            <p>You can initialize array in C either one by one or using a single statement as follows:</p>
+            <p>double balance[5] = {1000.0, 2.0, 3.4, 17.0, 50.0};</p>
+            <p>The number of values between braces { } can not be larger than the number of elements that we declare for the array between square brackets [ ]. Following is an example to assign a single element of the array:</p>
+            <p>If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write:</p>
+            <p>double balance[] = {1000.0, 2.0, 3.4, 17.0, 50.0};</p>
+            <p>You will create exactly the same array as you did in the previous example.</p>
+            <p>balance[4] = 50.0;</p>
+            <h3>Accessing Array Elements</h3>
+            <p>An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. For example:</p>
+            <p>double salary = balance[9];</p>
+            <p>The above statement will take 10th element from the array and assign the value to salary variable. Following is an example which will use all the above mentioned three concepts viz. declaration, assignment and accessing arrays:</p>
+            <img src="images/arr1.png">
+            <br><img src="images/arr2.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/arr3.png">
+            <h3>Multi-dimensional Arrays</h3>
+            <p>C programming language allows multidimensional arrays. Here is the general form of a multidimensional array declaration:</p>
+            <p>type name[size1][size2]...[sizeN];</p>
+            <p>For example, the following declaration creates a three dimensional 5 . 10 . 4 integer array:</p>
+            <p>int threedim[5][10][4];</p>
+            <h3>Two-Dimensional Arrays</h3>
+            <p>The simplest form of the multidimensional array is the two-dimensional array. A two-dimensional array is, in essence, a list of one-dimensional arrays. To declare a two-dimensional integer array of size x, y you would write something as follows:</p>
+            <p>type arrayName [ x ][ y ];</p>
+            <p>Where type can be any valid C data type and <b>arrayName</b> will be a valid C identifier. A two-dimensional array can be think as a table which will have x number of rows and y number of columns. A 2-dimentional array <b>a</b>, which contains three rows and four columns can be shown as below:</p>
+            <img src="images/arr4.png">
+            <p>Thus, every element in array a is identified by an element name of the form a[ i ][ j ], where a is the name of the array, and i and j are the subscripts that uniquely identify each element in a.</p>
+
+            <h2 id="C Pointers"></h2>
+            <div align="center">
+                <h1><em>C Pointers</em></h1>
+            </div>
+            <p>Pointers in C are easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers. So it becomes necessary to learn pointers to become a perfect C programmer. Let's start learning them in simple and easy steps.</p>
+            <p>As you know, every variable is a memory location and every memory location has its address defined which can be accessed using ampersand (&) operator, which denotes an address in memory.</p>
+            <p>Consider the following example, which will print the address of the variables defined:</p>
+            <img src="images/pon.png">
+            <P>When the above code is compiled and executed, it produces result something as follows:</P>
+            <img src="images/pon1.png">
+            <p>So you understood what is memory address and how to access it, so base of the concept is over. Now let us see what is a pointer.</p>
+            <h3>What Are Pointers?</h3>
+            <p>A pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location. Like any variable or constant, you must declare a pointer before you can use it to store any variable address. The general form of a pointer variable declaration is:</p>
+            <p>type *var-name;</p>
+            <p>Here, type is the pointer's base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk * you used to declare a pointer is the same asterisk that you use for multiplication. However, in this statement the asterisk is being used to designate a variable as a pointer. Following are the valid pointer declaration:</p>
+            <p>int *ip; /* pointer to an integer */</p>
+            <p>double *dp; /* pointer to a double */</p>
+            <p>float *fp; /* pointer to a float */</p>
+            <p>char *ch /* pointer to a character */</p>
+            <p>The actual data type of the value of all pointers, whether integer, float, character, or otherwise, is the same, a long hexadecimal number that represents a memory address. The only difference between pointers of different data types is the data type of the variable or constant that the pointer points to.</p>
+            <h3>How to use Pointers?</h3>
+            <p>There are few important operations, which we will do with the help of pointers very frequently. (a) we define a pointer variable (b) assign the address of a variable to a pointer and (c) finally access the value at the address available in the pointer variable. This is done by using unary operator * that returns the value of the variable located at the address specified by its operand.</p>
+            <p>Following example makes use of these operations:</p>
+            <img src="images/pon2.png">
+            <p>When the above code is compiled and executed, it produces result something as follows:</p>
+            <img src="images/pon3.png">
+
+            <h2 id="C Strings"></h2>
+            <div align="center">
+                <h1><em>C Strings</em></h1>
+            </div>
+            <P>The string in C programming language is actually a one-dimensional array of characters which is terminated by a null character '\0'. Thus a null-terminated string contains the characters that comprise the string followed by a null.</P>
+            <p>The following declaration and initialization create a string consisting of the word "Hello".To hold the null character at the end of the array, the size of the character array containing the string is one more than the number of characters in the word "Hello".</p>
+            <p>char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};</p>
+            <p>If you follow the rule of array initialization then you can write the above statement as follows:</p>
+            <p>char greeting[] = "Hello";</P>
+            <p>Following is the memory presentation of above-defined string in C/C++:</p>
+            <table border="1">
+                <tr>
+                    <th>H</th>
+                    <th>e</th>
+                    <th>l</th>
+                    <th>l</th>
+                    <th>o</th>
+                    <th>'\0'</th>
+                </tr>
+            </table>
+            <p>Actually, you do not place the null character at the end of a string constant. The C compiler automatically places the '\0' at the end of the string when it initializes the array. Let us try to print above mentioned string</p>
+            <img src="images/st.png">
+            <p>When the above code is compiled and executed, it produces result something as follows:</p>
+            <p>Greeting message: Hello</p>
+            <p>C supports a wide range of functions that manipulate null-terminated strings:</p>
+            <table border="1">
+                <tr>
+                    <th>S.N.</th>
+                    <th>Function & Purpose</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th><b>strcpy(s1, s2);</b><br>Copies string s2 into string s1</br></th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th><b>strcpy(s1, s2);</b><br> Copies string s2 into string s1</br></th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th><b>strcpy(s1);</b><br> Returns the length of string s1.</br></th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th><b>strcpy(s1, s2);</b><br> Returns 0 if s1 and s2 are the same; less than 0 if s1(s2; greater than 0 if s1)s2.</br></th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <th><b>strcpy(s1, ch);</b><br> Returns a pointer to the first occurrence of character ch in string s1.</br></th>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <th><b>strcpy(s1, s2);</b><br> Returns a pointer to the first occurrence of string s2 in string s1.</br></th>
+                </tr>
+            </table>
+            <p>Following example makes use of few of the above-mentioned functions:</p>
+            <img src="images/st1.png">
+            <p>When the above code is compiled and executed, it produces result something as follows:</p>
+            <P>strcpy( str3, str1) : Hello</P>
+            <p>strcat( str1, str2): HelloWorld</p>
+            <p>strlen(str1) : 10</p>
+
+            <h2 id="C Structures"></h2>
+            <div align="center">
+                <h1><em>C Structures</em></h1>
+            </div>
+            <P>C arrays allow you to define type of variables that can hold several data items of the same kind but structure is another user defined data type available in C programming, which allows you to combine data items of different kinds.</P>
+            <p> Structures are used to represent a record, suppose you want to keep track of your books in a library. You might want to track the following attributes about each book:</P>
+            <p><li>Title</li></p>
+            <p><li>Author</li></p>
+            <p><li>Subject</li></p>
+            <p><li>Book ID</li></p>
+            <h3>Defining a Structure</h3>
+            <p>To define a structure, you must use the <b>struct</b> statement. The <b>struct statement</b> defines a new data type, with more than one member for your program. The format of the <b>struct statement</b> is this:</p>
+            <p>struct [structure tag]</p>
+            <p>{</p>
+            <p>member definition;</p>
+            <p>member definition;</p>
+            <p>.....</p>
+            <p>member definition;</p>
+            <p>}[one or more structure variables];</p>
+            <p>The structure tag is optional and each member definition is a normal variable definition, such as int i; or float f; or any other valid variable definition. At the end of the structure's definition, before the final semicolon, you can specify one or more structure variables but it is optional. Here is the way you would declare the Book structure:</p>
+            <p>struct Books</p>
+            <p>{</p>
+            <P>char title[50];</P>
+            <P>char author[50];</P>
+            <P>char subject[100];</P>
+            <P>int book_id;</P>
+            <P>} book;</P>
+            <h3>Accessing Structure Members</h3>
+            <p>To access any member of a structure, we use the member access operator <b>()</b>. The member access operator is coded as a period between the structure variable name and the structure member that we wish to access. You would use <b>struct</b> keyword to definevariables of structure type. Following is the example to explain usage of structure:</p>
+            <img src="images/st2.png">
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/st4.png">
+            <h3>Structures as Function Arguments</h3>
+            <p>You can pass a structure as a function argument in very similar way as you pass any other variable or pointer. You would access structure variables in the similar way as you have accessed in the above example:</p>
+            <img src="images/st5.png">
+            <br><img src="images/st6.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/st3.png">
+            <h3>Pointers to Structures</h3>
+            <p>You can define pointers to structures in very similar way as you define pointer to any other variable as follows:</p>
+            <p>struct Books *struct_pointer;</p>
+            <p>Now, you can store the address of a structure variable in the above defined pointer variable. To find the address of a structure variable, place the & operator before the structure's name as follows:</p>
+            <p>struct_pointer = &Book1;</p>
+            <p>To access the members of a structure using a pointer to that structure, you must use the -> operator as follows:</p>
+            <p>struct_pointer->title;</p>
+            <p>Let us re-write above example using structure pointer, hope this will be easy for you to understand the concept:</p>
+            <img src="images/st7.png">
+            <br><img src="images/st8.png"></br>
+            <p>When the above code is compiled and executed, it produces the following result:</p>
+            <img src="images/st9.png">
+            <br><img src="images/st10.png"></br>
+
+
+
+            <script type="text/javascript">
+                window.addEventListener('scroll',function(){
+                    var scroll = document.querySelector('.scrollTop');
+                    scroll.classList.toggle("active" ,window.scrollY > 500)
+                })
+            </script>
+            </body>
+        
+    </html>
